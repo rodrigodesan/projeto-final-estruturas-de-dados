@@ -1,0 +1,38 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'PressStart2P-Regular';
+    src: url(../font/PressStart2P-Regular.ttf);
+}
+
+body {
+    margin: auto;
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
+}
+
+h1 {
+    text-align: center;
+    font-family: 'PressStart2P-Regular';
+    font-size: 2em;
+    font-weight: bolder;
+    width: auto;
+    padding: 10px 20px;
+}
+
+p {
+    text-align: center;
+    margin: auto;
+
+}
+
+button {
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+button:hover {
+    background-color: yellow;
+    
+}

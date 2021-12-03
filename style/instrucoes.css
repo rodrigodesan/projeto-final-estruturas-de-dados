@@ -1,0 +1,41 @@
+@charset 'UTF-8';
+
+body {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div#tutorial{
+    background-color: white;
+}
+
+.tutorial > img{
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+}
+
+h2 > p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+main > p {
+    text-align: justify;
+}
+p {
+    text-align: center;
+}
+
+div.linkHome {
+    text-align: center;
+}
