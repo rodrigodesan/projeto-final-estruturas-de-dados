@@ -18,7 +18,8 @@ export class Trie{
     }
 
     charToIndex(ch){
-        return ch.charCodeAt()-'a'.charCodeAt();
+        var char = ch.normalize('NFD').replace(/[\u0300-\u036f]/g,"").toLowerCase()
+        return char.charCodeAt()-'a'.charCodeAt();
     }
 
     indexToChar(ind){
@@ -153,19 +154,21 @@ export class Trie{
 /*let trie = new Trie();
 
 trie.put("casa",1);
-trie.put("circo",2);
+trie.put("Circo",2);
 trie.put("barco",3);
 trie.put("bloco",4);
 trie.put("risco",5);
-trie.put("zebra",6);
+trie.put("Zebra",6);
 trie.put("sopa",7);
 trie.put("lua",8);
-trie.put("casarao",9);
+trie.put("casarão",9);
+trie.put("mutidão",10);
 
 console.log(trie);
-console.log(trie.keysWithPrefix('c'));
+console.log(trie.keysWithPrefix('Z'));
 console.log(trie.keysThatMatch('...co'));
 console.log(trie.longestPrefixOf("casao"));
+console.log(trie.keysThatMatch('.....ao'));
 
 trie.delete("circo");
 

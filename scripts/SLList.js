@@ -5,7 +5,7 @@ export class Node {
     }
 }
 
-class SLList {
+export class SLList {
     constructor(){
         this.n = 0;
         this.head = null;
