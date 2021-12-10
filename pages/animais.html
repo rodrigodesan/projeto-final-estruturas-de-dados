@@ -1,12 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Palavras Cruzadas</title>
+    <link rel="stylesheet" href="../style/animais.css">
 </head>
 <body>
-    <h1>Animais</h1>
+    <header>
+        <h1>Animais</h1>
+    </header>
+    <div>
+        <!-- Blocos vazios apenas com o Titulo N7 -->
+        <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text" name="" id=""><input class="nulo" disabled type="text"><input class="nulo" disabled value="7" type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><br>
+          
+        <!-- Palavra 1 e inicio palavra 7-->
+        <input class="nulo" disabled type="text"><input class="nulo"  disabled type="text"><input class="nulo" disabled value="1" type="text"><input class="usable dica1" type="text" name="" id="dica1-item1" oninput="getd1i1()" maxlength="1"><input class="usable dica1 dica7" type="text" name="" id="dica1-item2-dica7-item1" oninput="getd1i2()" maxlength="1"><input class="usable dica1" type="text" name="" id="dica1-item3" oninput="getd1i3()" maxlength="1"><input class="usable dica1" type="text" name="" id="dica1-item4" oninput="getd1i4()" maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled value="2" type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><br>
+
+         <!--Cotinuação 7 e inicio palavra 2  -->
+        <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica7" type="text" name="" id="dica7-item2" oninput="getd7i2()" maxlength="1"><input class="nulo" disabled type="text" name="" ><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica2" type="text" name="" id="dica2-item1" oninput="getd2i1()" maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled value="4" type="text"><br>
+
+        <!--Cotinuação 7 e 2 , inicio  4  -->
+        <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica7" type="text" name="" id="dica7-item3" oninput="getd7i3()" maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled value="5" type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica2" type="text" name="" id="dica2-item2" oninput="getd2i2()" maxlength="1"><input class="nulo" disabled type="text"><input class="usable dica4" type="text" name="" id="dica4-item1" oninput="getd4i1()" maxlength="1"><br>
+
+        <!-- cont 7, inicio 5, cont 2, cont 4 -->
+        <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica7" type="text" name="" id="dica7-item4" oninput="getd7i4()" maxlength="1"><input class="nulo" disabled><input class="usable dica5" type="text" name="" id="dica5-item1" oninput="getd5i1()" maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" type="text"><input class="usable dica2" type="text" name="" id="dica2-item3" oninput="getd2i3()" maxlength="1"><input class="nulo" disabled type="text"><input class="usable dica4" type="text" name="" id="dica4-item2" oninput="getd4i2()" maxlength="1"><br>
+
+        <!-- inicio e fim 3, cont 7, 5, 2 4 -->
+        <input class="nulo" disabled value="3"><input class="usable dica3" type="text" name="" id="dica3-item1" oninput="getd3i1()" maxlength="1"><input class="usable dica3" type="text" name="" id="dica3-item2" oninput="getd3i2()" maxlength="1"><input class="usable dica3" type="text" name="" id="dica3-item3" oninput="getd3i3()" maxlength="1"><input class="usable dica3 dica7" type="text" name="" id="dica3-item4-dica7-item5" oninput="getd3i4()" maxlength="1"><input class="usable dica3" type="text" name="" id="dica3-item5" oninput="getd3i5()" maxlength="1"><input class="usable dica3 dica5" type="text" name="" id="dica3-item6-dica5-item2" oninput="getd3i6()" maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica2" type="text" name="" id="dica2-item4" oninput="getd2i4()" maxlength="1"><input class="nulo" disabled type="text"><input class="usable dica4" type="text" name="" id="dica4-item3" oninput="getd4i3()" maxlength="1"><br>
+
+        <!--cont 7, inicio-fim 8, continuacao 5, fim 2 e 4  -->
+        <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica7" type="text" name="" id="dica7-item6" oninput="getd7i6()" maxlength="1"><input class="nulo"  disabled value="8" type="text"><input class="usable dica5 dica8" type="text" name="" id="dica8-item1-dica5-item3" oninput="getd8i1()" maxlength="1"><input class="usable dica8" type="text" name="" id="dica8-item2" oninput="getd8i2()" maxlength="1"><input class="usable dica8" type="text" name="" id="dica8-item3" oninput="getd8i3()" maxlength="1"><input class="usable dica2 dica8" type="text" name="" id="dica8-item4-dica2-item5" oninput="getd8i4()" maxlength="1"><input class="usable dica8" type="text" name="" id="dica8-item5" oninput="getd8i5()" maxlength="1"><input class="usable dica4 dica8" type="text" name="" id="dica8-item6-dica4-item4" oninput="getd8i6()" maxlength="1"><br>
+
+        <!-- cont 7 e 5 -->
+        <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica7" type="text" name="" id="dica7-item7" oninput="getd7i7()" maxlength="1"><input class="nulo" disabled type="text"><input class="usable dica5" type="text" name="" id="dica5-item4" oninput="getd5i4()"maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><br>
+
+        <!-- final7, cont 5 -->
+        <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica7" type="text" name="" id="dica7-item8" oninput="getd7i8()" maxlength="1"><input class="nulo" disabled type="text"><input class="usable dica5" type="text" name="" id="dica5-item5" oninput="getd5i5()" maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><br>
+
+        <!-- inicio - fim 6 e 5 -->
+        <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled value="6" type="text"><input class="usable dica6" type="text" name="" id="dica6-item1" oninput="getd6i1()" maxlength="1"><input class="usable dica5 dica6" type="text" name="" id="dica6-item2-dica5-item6" oninput="getd6i2()" maxlength="1"><input class="usable dica6" type="text" name="" id="dica6-item3" oninput="getd6i3()" maxlength="1"><input class="usable dica6" type="text" name="" id="dica6-item4" oninput="getd6i4()" maxlength="1"><input class="usable dica6" type="text" name="" id="dica6-item5" oninput="getd6i5()" maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text">
+
+        <p >Dicas</p>
+        
+        <div id="dicas"></div>
+        <button onclick="resultado()"> FINALIZAR</button>
+        <button onclick="jogarNovamente()"> JOGAR NOVAMENTE </button>
+        <button><a href="jogar.html" style="text-decoration: none; color:black">TROCAR MODO</a></button>
+        
+    </div>
+
+    <script src="../scripts/animais.js" ></script>
 </body>
 </html>
