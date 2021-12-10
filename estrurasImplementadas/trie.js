@@ -1,4 +1,4 @@
-import { ArrayQueue } from './arrayQueue.js'
+import { ArrayQueue } from '../estrurasImplementadas/arrayQueue.js'
 
 const R = 26
 export class TrieNode{
