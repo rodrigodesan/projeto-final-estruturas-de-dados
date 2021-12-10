@@ -1,103 +1,106 @@
 @charset 'UTF-8';
 
-
 @font-face {
-    font-family: 'PressStart2P-Regular';
-    src: url('../font/PressStart2P-Regular.ttf');
+  font-family: 'PressStart2P-Regular';
+  src: url('../font/PressStart2P-Regular.ttf');
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-
 body {
-    padding: 20px;
-    min-width: auto;
-    max-width: auto;
-    margin: auto;
-    margin-bottom: auto;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #FBE599;
-       
+  padding: 20px;
+  min-width: auto;
+  max-width: auto;
+  margin: auto;
+  margin-bottom: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #fbe599;
+
+  min-height: 90vh;
+  display: flex;
+}
+
+main {
+  margin: auto;
 }
 
 h1 {
-    text-align: center;
-    font-family: 'PressStart2P-Regular', monospace;
-    width: fit-content;
-    width: auto;
+  text-align: center;
+  font-family: 'PressStart2P-Regular', monospace;
+  width: fit-content;
+  width: auto;
 }
 
 div {
-    text-align: center;
-    margin: auto;
+  text-align: center;
+  margin: auto;
 }
 
 p {
-    text-align: center;
+  text-align: center;
 }
 
-#logo{
-    width: 250px;
+#logo {
+  width: 250px;
 }
 
 .sound {
-    background-color: none;
-    width: 50px;
-    text-align: left;
-    margin: 10px 20px;
+  background-color: none;
+  width: 50px;
+  text-align: left;
+  margin: 10px 20px;
 }
 .info {
-    background-color: none;
-    width: 50px;
-    margin: 10px 20px;
-    text-align: left;
+  background-color: none;
+  width: 50px;
+  margin: 10px 20px;
+  text-align: left;
 }
 .button1 {
-    font-size: 100%;
-    font-family: 'PressStart2P-Regular';
-    height: 60px;
-    width: 225px;
-    border-radius: 20px;
-    background-color: #EAB1B1;
-    border-style: solid;
-    border-color: black;
-    cursor: pointer;
+  font-size: 100%;
+  font-family: 'PressStart2P-Regular';
+  height: 60px;
+  width: 225px;
+  border-radius: 20px;
+  background-color: #eab1b1;
+  border-style: solid;
+  border-color: black;
+  cursor: pointer;
 }
 
 .button1:hover {
-    background-color: rgb(252, 255, 80);
-    
+  background-color: rgb(252, 255, 80);
 }
 
 .button2 {
-    font-size: 70%;
-    font-family: 'PressStart2P-Regular';
-    height: 50px;
-    width: 200px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 0px;
-    background-color: #c4c4c4;
-    border-color: black;
-    border-style: solid;
-    cursor: pointer;
+  font-size: 70%;
+  font-family: 'PressStart2P-Regular';
+  height: 50px;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px;
+  background-color: #c4c4c4;
+  border-color: black;
+  border-style: solid;
+  cursor: pointer;
 }
 
-.button2:hover{
-    background-color: tomato;
+.button2:hover {
+  background-color: tomato;
 }
 
 .button3:hover {
-    background-color:rgb(68, 68, 182);
-    color: white;
-    cursor: pointer;
+  background-color: rgb(68, 68, 182);
+  color: white;
+  cursor: pointer;
 }
 
-.button4:hover{
-    background-color: red;
-    cursor: pointer;
+.button4:hover {
+  background-color: red;
+  cursor: pointer;
 }
