@@ -48,16 +48,11 @@ p {
   width: 250px;
 }
 
-.sound {
-  background-color: none;
-  width: 50px;
-  text-align: left;
-  margin: 10px 20px;
-}
+
 .info {
   background-color: none;
-  width: 50px;
-  margin: 10px 20px;
+  width: 45px;
+  margin: 1px auto;
   text-align: left;
 }
 .button1 {
@@ -94,13 +89,21 @@ p {
   background-color: tomato;
 }
 
-.button3:hover {
-  background-color: rgb(68, 68, 182);
-  color: white;
+.button3 {
+  height: 50px;
+  width: 155px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px;
+  background-color: #ffffff;
+  border-color: black;
+  border-style: solid;
   cursor: pointer;
 }
 
-.button4:hover {
-  background-color: red;
+
+.button3:hover {
+  background-color: rgb(68, 68, 182);
   cursor: pointer;
 }
+
