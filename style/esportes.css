@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+  background-color: blueviolet;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+}
+
+input {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  color: black;
+  margin: 1px;
+  padding: 2px;
+  text-align: center;
+}
+
+div {
+  display: inline-block;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.nulo {
+  background-color: blueviolet;
+  border-color: blueviolet;
+  box-shadow: none;
+  border-style: double;
+  text-decoration: none;
+}
+
+.dica7 {
+  text-align: center;
+}
+
+.dica1:hover {
+  background-color: grey;
+}
+
+li {
+  list-style-type: decimal;
+}
+
+button {
+  cursor: pointer;
+}
