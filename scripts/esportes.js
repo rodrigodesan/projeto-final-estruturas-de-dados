@@ -299,7 +299,7 @@ let d8_i7;
 // Palavra 1
 function getd1i1() {
   d1_i1_d2_i1 = document.getElementById('dica1-item1-dica2-item1');
-  let keys = esportes.keysThatMatch(`${d1_i1_d2_i1.value}...`);
+  let keys = esportes.keysThatMatch(`${d1_i1_d2_i1.value}.....`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'futsal') {
@@ -314,7 +314,7 @@ function getd1i1() {
 }
 function getd1i2() {
   d1_i2 = document.getElementById('dica1-item2');
-  let keys = esportes.keysThatMatch(`..${d1_i2.value}.`);
+  let keys = esportes.keysThatMatch(`.${d1_i2.value}....`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'futsal') {
@@ -329,7 +329,7 @@ function getd1i2() {
 }
 function getd1i3() {
   d1_i3 = document.getElementById('dica1-item3');
-  let keys = esportes.keysThatMatch(`..${d1_i3.value}.`);
+  let keys = esportes.keysThatMatch(`..${d1_i3.value}...`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'futsal') {
@@ -344,7 +344,7 @@ function getd1i3() {
 }
 function getd1i4() {
   d1_i4 = document.getElementById('dica1-item4');
-  let keys = esportes.keysThatMatch(`...${d1_i4.value}`);
+  let keys = esportes.keysThatMatch(`...${d1_i4.value}..`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'futsal') {
@@ -359,7 +359,7 @@ function getd1i4() {
 }
 function getd1i5() {
   d1_i5 = document.getElementById('dica1-item5');
-  let keys = esportes.keysThatMatch(`${d1_i5.value}...`);
+  let keys = esportes.keysThatMatch(`....${d1_i5.value}.`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'futsal') {
@@ -374,7 +374,7 @@ function getd1i5() {
 }
 function getd1i6() {
   d1_i6 = document.getElementById('dica1-item6');
-  let keys = esportes.keysThatMatch(`${d1_i6.value}...`);
+  let keys = esportes.keysThatMatch(`.....${d1_i6.value}`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'futsal') {
@@ -391,7 +391,7 @@ function getd1i6() {
 // Palavra 2
 function getd2i2() {
   d2_i2_d3_i2 = document.getElementById('dica2-item2-dica3-item2');
-  let keys = esportes.keysThatMatch(`.${d2_i2_d3_i2.value}...`);
+  let keys = esportes.keysThatMatch(`.${d2_i2_d3_i2.value}.....`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'futebol') {
@@ -406,7 +406,7 @@ function getd2i2() {
 }
 function getd2i3() {
   d2_i3 = document.getElementById('dica2-item3');
-  let keys = esportes.keysThatMatch(`..${d2_i3.value}..`);
+  let keys = esportes.keysThatMatch(`..${d2_i3.value}....`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'futebol') {
@@ -421,7 +421,7 @@ function getd2i3() {
 }
 function getd2i4() {
   d2_i4_d7_i2 = document.getElementById('dica2-item4-dica7-item2');
-  let keys = esportes.keysThatMatch(`.${d2_i4_d7_i2.value}...`);
+  let keys = esportes.keysThatMatch(`...${d2_i4_d7_i2.value}...`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'futebol') {
@@ -436,7 +436,7 @@ function getd2i4() {
 }
 function getd2i5() {
   d2_i5 = document.getElementById('dica2-item5');
-  let keys = esportes.keysThatMatch(`..${d2_i5.value}..`);
+  let keys = esportes.keysThatMatch(`....${d2_i5.value}..`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'futebol') {
@@ -451,7 +451,7 @@ function getd2i5() {
 }
 function getd2i6() {
   d2_i6 = document.getElementById('dica2-item6');
-  let keys = esportes.keysThatMatch(`..${d2_i6.value}..`);
+  let keys = esportes.keysThatMatch(`.....${d2_i6.value}.`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'futebol') {
@@ -466,7 +466,7 @@ function getd2i6() {
 }
 function getd2i7() {
   d2_i7 = document.getElementById('dica2-item7');
-  let keys = esportes.keysThatMatch(`..${d2_i7.value}..`);
+  let keys = esportes.keysThatMatch(`......${d2_i7.value}`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'futebol') {
@@ -483,7 +483,7 @@ function getd2i7() {
 // Palavra 3
 function getd3i1() {
   d3_i1 = document.getElementById('dica3-item1');
-  let keys = esportes.keysThatMatch(`${d3_i1.value}.....`);
+  let keys = esportes.keysThatMatch(`${d3_i1.value}...`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'judo') {
@@ -498,7 +498,7 @@ function getd3i1() {
 }
 function getd3i3() {
   d3_i3 = document.getElementById('dica3-item3');
-  let keys = esportes.keysThatMatch(`${d3_i3.value}.....`);
+  let keys = esportes.keysThatMatch(`..${d3_i3.value}.`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'judo') {
@@ -513,7 +513,7 @@ function getd3i3() {
 }
 function getd3i4() {
   d3_i4 = document.getElementById('dica3-item4');
-  let keys = esportes.keysThatMatch(`${d3_i4.value}.....`);
+  let keys = esportes.keysThatMatch(`...${d3_i4.value}`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'judo') {
@@ -530,7 +530,7 @@ function getd3i4() {
 // Palavra 4
 function getd4i1() {
   d4_i1_d5_i2 = document.getElementById('dica4-item1-dica5-item2');
-  let keys = esportes.keysThatMatch(`.${d4_i1_d5_i2.value}...`);
+  let keys = esportes.keysThatMatch(`${d4_i1_d5_i2.value}.....`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'karate') {
@@ -545,7 +545,7 @@ function getd4i1() {
 }
 function getd4i2() {
   d4_i2 = document.getElementById('dica4-item2');
-  let keys = esportes.keysThatMatch(`.${d4_i2.value}...`);
+  let keys = esportes.keysThatMatch(`.${d4_i2.value}....`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'karate') {
@@ -560,7 +560,7 @@ function getd4i2() {
 }
 function getd4i3() {
   d4_i3_d6_i3 = document.getElementById('dica4-item3-dica6-item3');
-  let keys = esportes.keysThatMatch(`.${d4_i3_d6_i3.value}...`);
+  let keys = esportes.keysThatMatch(`..${d4_i3_d6_i3.value}...`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'karate') {
@@ -575,7 +575,7 @@ function getd4i3() {
 }
 function getd4i4() {
   d4_i4_d8_i4 = document.getElementById('dica4-item4-dica8-item4');
-  let keys = esportes.keysThatMatch(`.${d4_i4_d8_i4.value}...`);
+  let keys = esportes.keysThatMatch(`...${d4_i4_d8_i4.value}..`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'karate') {
@@ -590,7 +590,7 @@ function getd4i4() {
 }
 function getd4i5() {
   d4_i5 = document.getElementById('dica4-item5');
-  let keys = esportes.keysThatMatch(`.${d4_i5.value}...`);
+  let keys = esportes.keysThatMatch(`....${d4_i5.value}.`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'karate') {
@@ -605,7 +605,7 @@ function getd4i5() {
 }
 function getd4i6() {
   d4_i6 = document.getElementById('dica4-item6');
-  let keys = esportes.keysThatMatch(`.${d4_i6.value}...`);
+  let keys = esportes.keysThatMatch(`.....${d4_i6.value}`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'karate') {
@@ -622,7 +622,7 @@ function getd4i6() {
 // Palavra 5
 function getd5i1() {
   d5_i1_d7_i5 = document.getElementById('dica5-item1-dica7-item5');
-  let keys = esportes.keysThatMatch(`.${d5_i1_d7_i5.value}...`);
+  let keys = esportes.keysThatMatch(`${d5_i1_d7_i5.value}....`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'skate') {
@@ -637,7 +637,7 @@ function getd5i1() {
 }
 function getd5i3() {
   d5_i3 = document.getElementById('dica5-item3');
-  let keys = esportes.keysThatMatch(`.${d5_i3.value}...`);
+  let keys = esportes.keysThatMatch(`..${d5_i3.value}..`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'skate') {
@@ -652,7 +652,7 @@ function getd5i3() {
 }
 function getd5i4() {
   d5_i4 = document.getElementById('dica5-item4');
-  let keys = esportes.keysThatMatch(`.${d5_i4.value}...`);
+  let keys = esportes.keysThatMatch(`...${d5_i4.value}.`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'skate') {
@@ -667,7 +667,7 @@ function getd5i4() {
 }
 function getd5i5() {
   d5_i5 = document.getElementById('dica5-item5');
-  let keys = esportes.keysThatMatch(`.${d5_i5.value}...`);
+  let keys = esportes.keysThatMatch(`....${d5_i5.value}`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'skate') {
@@ -684,7 +684,7 @@ function getd5i5() {
 // Palavra 6
 function getd6i1() {
   d6_i1 = document.getElementById('dica6-item1');
-  let keys = esportes.keysThatMatch(`.${d6_i1.value}...`);
+  let keys = esportes.keysThatMatch(`${d6_i1.value}...`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'surf') {
@@ -699,7 +699,7 @@ function getd6i1() {
 }
 function getd6i2() {
   d6_i2 = document.getElementById('dica6-item2');
-  let keys = esportes.keysThatMatch(`.${d6_i2.value}...`);
+  let keys = esportes.keysThatMatch(`.${d6_i2.value}..`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'surf') {
@@ -714,7 +714,7 @@ function getd6i2() {
 }
 function getd6i4() {
   d6_i4 = document.getElementById('dica6-item4');
-  let keys = esportes.keysThatMatch(`.${d6_i4.value}...`);
+  let keys = esportes.keysThatMatch(`...${d6_i4.value}`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'surf') {
@@ -731,7 +731,7 @@ function getd6i4() {
 // Palavra 7
 function getd7i1() {
   d7_i1 = document.getElementById('dica7-item1');
-  let keys = esportes.keysThatMatch(`.${d7_i1.value}...`);
+  let keys = esportes.keysThatMatch(`${d7_i1.value}....`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'tenis') {
@@ -746,7 +746,7 @@ function getd7i1() {
 }
 function getd7i3() {
   d7_i3 = document.getElementById('dica7-item3');
-  let keys = esportes.keysThatMatch(`.${d7_i3.value}...`);
+  let keys = esportes.keysThatMatch(`..${d7_i3.value}..`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'tenis') {
@@ -761,7 +761,7 @@ function getd7i3() {
 }
 function getd7i4() {
   d7_i4 = document.getElementById('dica7-item4');
-  let keys = esportes.keysThatMatch(`.${d7_i4.value}...`);
+  let keys = esportes.keysThatMatch(`...${d7_i4.value}.`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'tenis') {
@@ -778,7 +778,7 @@ function getd7i4() {
 // Palavra 8
 function getd8i1() {
   d8_i1 = document.getElementById('dica8-item1');
-  let keys = esportes.keysThatMatch(`.${d8_i1.value}...`);
+  let keys = esportes.keysThatMatch(`${d8_i1.value}......`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'nataçao') {
@@ -793,7 +793,7 @@ function getd8i1() {
 }
 function getd8i2() {
   d8_i2 = document.getElementById('dica8-item2');
-  let keys = esportes.keysThatMatch(`.${d8_i2.value}...`);
+  let keys = esportes.keysThatMatch(`.${d8_i2.value}.....`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'nataçao') {
@@ -808,7 +808,7 @@ function getd8i2() {
 }
 function getd8i3() {
   d8_i3 = document.getElementById('dica8-item3');
-  let keys = esportes.keysThatMatch(`.${d8_i3.value}...`);
+  let keys = esportes.keysThatMatch(`..${d8_i3.value}....`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'nataçao') {
@@ -823,7 +823,7 @@ function getd8i3() {
 }
 function getd8i5() {
   d8_i5 = document.getElementById('dica8-item5');
-  let keys = esportes.keysThatMatch(`.${d8_i5.value}...`);
+  let keys = esportes.keysThatMatch(`....${d8_i5.value}..`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'nataçao') {
@@ -838,7 +838,7 @@ function getd8i5() {
 }
 function getd8i6() {
   d8_i6 = document.getElementById('dica8-item6');
-  let keys = esportes.keysThatMatch(`.${d8_i6.value}...`);
+  let keys = esportes.keysThatMatch(`.....${d8_i6.value}.`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'nataçao') {
@@ -853,7 +853,7 @@ function getd8i6() {
 }
 function getd8i7() {
   d8_i7 = document.getElementById('dica8-item7');
-  let keys = esportes.keysThatMatch(`.${d8_i7.value}...`);
+  let keys = esportes.keysThatMatch(`......${d8_i7.value}`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
     if (keys[i] == 'nataçao') {
@@ -887,8 +887,8 @@ function resultado() {
 
   // palavra 2
   d2_i2_d3_i2 = document.getElementById('dica2-item2-dica3-item2');
-  d2_i3 = document.getElementById('dica2-item2');
-  d2_i4_d7_i2 = document.getElementById('dica12-item4-dica7-item2');
+  d2_i3 = document.getElementById('dica2-item3');
+  d2_i4_d7_i2 = document.getElementById('dica2-item4-dica7-item2');
   d2_i5 = document.getElementById('dica2-item5');
   d2_i6 = document.getElementById('dica2-item6');
   d2_i7 = document.getElementById('dica2-item7');
@@ -942,10 +942,10 @@ function resultado() {
     d1_i1_d2_i1.value +
     d2_i2_d3_i2.value +
     d2_i3.value +
-    d2_i4_d7_i2 +
-    d2_i5 +
-    d2_i6 +
-    d2_i7;
+    d2_i4_d7_i2.value +
+    d2_i5.value +
+    d2_i6.value +
+    d2_i7.value;
 
   palavra3 = d3_i1.value + d2_i2_d3_i2.value + d3_i3.value + d3_i4.value;
 
@@ -966,7 +966,7 @@ function resultado() {
 
   palavra6 = d6_i1.value + d6_i2.value + d4_i3_d6_i3 + d6_i4.value;
 
-  palavra7 = d7_i1.value + d2_i4_d7_i2 + d7_i3.value + d7_i4.value;
+  palavra7 = d7_i1.value + d2_i4_d7_i2.value + d7_i3.value + d7_i4.value;
 
   palavra8 =
     d8_i1.value +
