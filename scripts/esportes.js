@@ -781,7 +781,7 @@ function getd8i1() {
   let keys = esportes.keysThatMatch(`${d8_i1.value}......`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
-    if (keys[i] == 'nataçao') {
+    if (keys[i] == 'natacao') {
       pertence = true;
     }
   }
@@ -796,7 +796,7 @@ function getd8i2() {
   let keys = esportes.keysThatMatch(`.${d8_i2.value}.....`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
-    if (keys[i] == 'nataçao') {
+    if (keys[i] == 'natacao') {
       pertence = true;
     }
   }
@@ -811,7 +811,7 @@ function getd8i3() {
   let keys = esportes.keysThatMatch(`..${d8_i3.value}....`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
-    if (keys[i] == 'nataçao') {
+    if (keys[i] == 'natacao') {
       pertence = true;
     }
   }
@@ -826,7 +826,7 @@ function getd8i5() {
   let keys = esportes.keysThatMatch(`....${d8_i5.value}..`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
-    if (keys[i] == 'nataçao') {
+    if (keys[i] == 'natacao') {
       pertence = true;
     }
   }
@@ -841,7 +841,7 @@ function getd8i6() {
   let keys = esportes.keysThatMatch(`.....${d8_i6.value}.`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
-    if (keys[i] == 'nataçao') {
+    if (keys[i] == 'natacao') {
       pertence = true;
     }
   }
@@ -856,7 +856,7 @@ function getd8i7() {
   let keys = esportes.keysThatMatch(`......${d8_i7.value}`);
   let pertence = false;
   for (let i = 0; i < keys.length; i++) {
-    if (keys[i] == 'nataçao') {
+    if (keys[i] == 'natacao') {
       pertence = true;
     }
   }
