@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+body {
+    background-color: yellow;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+
+input {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    color: black;
+    margin: 1px;
+    padding: 2px;
+    text-align: center;
+    border-color: grey;
+    font-weight: bolder;
+    
+}
+
+
+
+div {
+    display: inline-block;
+    width: 100%;
+    margin: 0px auto;
+
+}
+
+.nulo {
+    background-color: yellow;
+    border-color: yellow;
+    box-shadow: none;
+    border-style: double;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: decimal;
+    
+}
