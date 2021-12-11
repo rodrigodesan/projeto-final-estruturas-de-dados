@@ -16,6 +16,8 @@ input {
   padding: 2px;
   text-align: center;
   font-weight: bolder;
+  border-color: grey;
+
 }
 
 div {
