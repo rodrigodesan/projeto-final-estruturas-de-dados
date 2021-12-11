@@ -220,7 +220,7 @@ esportes.put('Tênis', 7);
 esportes.put('Natação', 8);
 
 let dicas = [
-  'Semelhante ao futbol, jogado em uma quadra.',
+  'Semelhante ao futebol, jogado em uma quadra.',
   'Times de 11 pessoas devem fazer a bola atravesar a baliza adversária, usando somente o pés.',
   'Esporte de origem japonesa em que o atleta deve derrubar o adversário.',
   'Arte marcial de origem japonesa, onde o atleta deve pontuar acertando golpes no adversário.',
@@ -877,7 +877,202 @@ for (let i = 0; i < dicas.length; i++) {
   pDicas.appendChild(li);
 }
 
-function resultado() {}
+function resultado() {
+  d1_i1_d2_i1 = document.getElementById('dica1-item1-dica2-item1');
+  d1_i2 = document.getElementById('dica1-item2');
+  d1_i3 = document.getElementById('dica1-item3');
+  d1_i4 = document.getElementById('dica1-item4');
+  d1_i5 = document.getElementById('dica1-item5');
+  d1_i6 = document.getElementById('dica1-item6');
+
+  // palavra 2
+  d2_i2_d3_i2 = document.getElementById('dica2-item2-dica3-item2');
+  d2_i3 = document.getElementById('dica2-item2');
+  d2_i4_d7_i2 = document.getElementById('dica12-item4-dica7-item2');
+  d2_i5 = document.getElementById('dica2-item5');
+  d2_i6 = document.getElementById('dica2-item6');
+  d2_i7 = document.getElementById('dica2-item7');
+
+  // palavra 3
+  d3_i1 = document.getElementById('dica3-item1');
+  d3_i3 = document.getElementById('dica3-item3');
+  d3_i4 = document.getElementById('dica3-item4');
+
+  // palavra 4
+  d4_i1_d5_i2 = document.getElementById('dica4-item1-dica5-item2');
+  d4_i2 = document.getElementById('dica4-item2');
+  d4_i3_d6_i3 = document.getElementById('dica4-item3-dica6-item3');
+  d4_i4_d8_i4 = document.getElementById('dica4-item4-dica8-item4');
+  d4_i5 = document.getElementById('dica4-item5');
+  d4_i6 = document.getElementById('dica4-item6');
+
+  // palavra 5
+  d5_i1_d7_i5 = document.getElementById('dica5-item1-dica7-item5');
+  d5_i3 = document.getElementById('dica5-item3');
+  d5_i4 = document.getElementById('dica5-item4');
+  d5_i5 = document.getElementById('dica5-item5');
+
+  // palavra 6
+  d6_i1 = document.getElementById('dica6-item1');
+  d6_i2 = document.getElementById('dica6-item2');
+  d6_i4 = document.getElementById('dica6-item4');
+
+  // palavra 7
+  d7_i1 = document.getElementById('dica7-item1');
+  d7_i3 = document.getElementById('dica7-item3');
+  d7_i4 = document.getElementById('dica7-item4');
+
+  // palavra 8
+  d8_i1 = document.getElementById('dica8-item1');
+  d8_i2 = document.getElementById('dica8-item2');
+  d8_i3 = document.getElementById('dica8-item3');
+  d8_i5 = document.getElementById('dica8-item5');
+  d8_i6 = document.getElementById('dica8-item6');
+  d8_i7 = document.getElementById('dica8-item7');
+
+  palavra1 =
+    d1_i1_d2_i1.value +
+    d1_i2.value +
+    d1_i3.value +
+    d1_i4.value +
+    d1_i5.value +
+    d1_i6.value;
+
+  palavra2 =
+    d1_i1_d2_i1.value +
+    d2_i2_d3_i2.value +
+    d2_i3.value +
+    d2_i4_d7_i2 +
+    d2_i5 +
+    d2_i6 +
+    d2_i7;
+
+  palavra3 = d3_i1.value + d2_i2_d3_i2.value + d3_i3.value + d3_i4.value;
+
+  palavra4 =
+    d4_i1_d5_i2.value +
+    d4_i2.value +
+    d4_i3_d6_i3.value +
+    d4_i4_d8_i4.value +
+    d4_i5.value +
+    d4_i6.value;
+
+  palavra5 =
+    d5_i1_d7_i5.value +
+    d4_i1_d5_i2.value +
+    d5_i3.value +
+    d5_i4.value +
+    d5_i5.value;
+
+  palavra6 = d6_i1.value + d6_i2.value + d4_i3_d6_i3 + d6_i4.value;
+
+  palavra7 = d7_i1.value + d2_i4_d7_i2 + d7_i3.value + d7_i4.value;
+
+  palavra8 =
+    d8_i1.value +
+    d8_i2.value +
+    d8_i3.value +
+    d4_i4_d8_i4.value +
+    d8_i5.value +
+    d8_i6.value +
+    d8_i7.value;
+
+  // Checagem palavra1
+  let dica1 = document.getElementsByClassName('dica1');
+  let p1 = 'FUTSAL';
+  if (esportes.get(palavra1) != 1) {
+    for (let i = 0; i < dica1.length; i++) {
+      dica1[i].style.backgroundColor = 'rgba(255, 158, 158, 0.746)';
+    }
+  }
+  for (let i = 0; i < p1.length; i++) {
+    dica1[i].value = p1[i];
+  }
+
+  // Checagem palavra2
+  let dica2 = document.getElementsByClassName('dica2');
+  let p2 = 'FUTEBOL';
+  if (esportes.get(palavra2) != 2) {
+    for (let i = 0; i < dica2.length; i++) {
+      dica2[i].style.backgroundColor = 'rgba(255, 158, 158, 0.746)';
+    }
+  }
+  for (let i = 0; i < p2.length; i++) {
+    dica2[i].value = p2[i];
+  }
+
+  // Checagem palavra3
+  let dica3 = document.getElementsByClassName('dica3');
+  let p3 = 'JUDÔ';
+  if (esportes.get(palavra3) != 3) {
+    for (let i = 0; i < dica3.length; i++) {
+      dica3[i].style.backgroundColor = 'rgba(255, 158, 158, 0.746)';
+    }
+  }
+  for (let i = 0; i < p3.length; i++) {
+    dica3[i].value = p3[i];
+  }
+
+  // Checagem palavra4
+  let dica4 = document.getElementsByClassName('dica4');
+  let p4 = 'KARATÊ';
+  if (esportes.get(palavra4) != 4) {
+    for (let i = 0; i < dica4.length; i++) {
+      dica4[i].style.backgroundColor = 'rgba(255, 158, 158, 0.746)';
+    }
+  }
+  for (let i = 0; i < p4.length; i++) {
+    dica4[i].value = p4[i];
+  }
+
+  // Checagem palavra5
+  let dica5 = document.getElementsByClassName('dica5');
+  let p5 = 'SKATE';
+  if (esportes.get(palavra5) != 5) {
+    for (let i = 0; i < dica5.length; i++) {
+      dica5[i].style.backgroundColor = 'rgba(255, 158, 158, 0.746)';
+    }
+  }
+  for (let i = 0; i < p5.length; i++) {
+    dica5[i].value = p5[i];
+  }
+
+  // Checagem palavra6
+  let dica6 = document.getElementsByClassName('dica6');
+  let p6 = 'SURF';
+  if (esportes.get(palavra6) != 6) {
+    for (let i = 0; i < dica6.length; i++) {
+      dica6[i].style.backgroundColor = 'rgba(255, 158, 158, 0.746)';
+    }
+  }
+  for (let i = 0; i < p6.length; i++) {
+    dica6[i].value = p6[i];
+  }
+
+  // Checagem palavra7
+  let dica7 = document.getElementsByClassName('dica7');
+  let p7 = 'TÊNIS';
+  if (esportes.get(palavra7) != 7) {
+    for (let i = 0; i < dica7.length; i++) {
+      dica7[i].style.backgroundColor = 'rgba(255, 158, 158, 0.746)';
+    }
+  }
+  for (let i = 0; i < p7.length; i++) {
+    dica7[i].value = p7[i];
+  }
+
+  // Checagem palavra8
+  let dica8 = document.getElementsByClassName('dica8');
+  let p8 = 'NATAÇÃO';
+  if (esportes.get(palavra8) != 8) {
+    for (let i = 0; i < dica8.length; i++) {
+      dica8[i].style.backgroundColor = 'rgba(255, 158, 158, 0.746)';
+    }
+  }
+  for (let i = 0; i < p8.length; i++) {
+    dica8[i].value = p8[i];
+  }
+}
 
 function jogarNovamente() {
   document.location.reload(true);
