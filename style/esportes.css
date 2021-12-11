@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  background-color: blueviolet;
+  background-color: orangered;
   text-align: center;
   margin: auto;
   justify-content: center;
@@ -15,6 +15,7 @@ input {
   margin: 1px;
   padding: 2px;
   text-align: center;
+  font-weight: bolder;
 }
 
 div {
@@ -24,19 +25,11 @@ div {
 }
 
 .nulo {
-  background-color: blueviolet;
-  border-color: blueviolet;
+  background-color: orangered;
+  border-color: orangered;
   box-shadow: none;
   border-style: double;
   text-decoration: none;
-}
-
-.dica7 {
-  text-align: center;
-}
-
-.dica1:hover {
-  background-color: grey;
 }
 
 li {
