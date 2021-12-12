@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgba(49, 213, 235, 0.774);
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+
+input {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    color: black;
+    margin: 1px;
+    padding: 2px;
+    text-align: center;
+}
+
+
+
+div {
+    display: inline-block;
+    width: 100%;
+    margin: 0px auto;
+
+}
+
+.nulo {
+    background-color:rgba(49, 213, 235, 0.774);
+    border-color: rgba(49, 213, 235, 0.774);
+    box-shadow: none;
+    border-style: double;
+    text-decoration: none;
+}
+
+.dica7 {
+    text-align: center;
+}
+
+
+.dica1:hover {
+    background-color: rgb(14, 13, 13);
+}
+
+li {
+    list-style-type: decimal;
+}
+
+button {
+    cursor: pointer;
+}
