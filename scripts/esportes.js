@@ -964,9 +964,14 @@ function resultado() {
     d5_i4.value +
     d5_i5.value;
 
-  palavra6 = d6_i1.value + d6_i2.value + d4_i3_d6_i3 + d6_i4.value;
+  palavra6 = d6_i1.value + d6_i2.value + d4_i3_d6_i3.value + d6_i4.value;
 
-  palavra7 = d7_i1.value + d2_i4_d7_i2.value + d7_i3.value + d7_i4.value;
+  palavra7 =
+    d7_i1.value +
+    d2_i4_d7_i2.value +
+    d7_i3.value +
+    d7_i4.value +
+    d5_i1_d7_i5.value;
 
   palavra8 =
     d8_i1.value +
@@ -1051,7 +1056,7 @@ function resultado() {
 
   // Checagem palavra7
   let dica7 = document.getElementsByClassName('dica7');
-  let p7 = 'TÊNIS';
+  let p7 = 'TENIS';
   if (esportes.get(palavra7) != 7) {
     for (let i = 0; i < dica7.length; i++) {
       dica7[i].style.backgroundColor = 'rgba(255, 158, 158, 0.746)';
