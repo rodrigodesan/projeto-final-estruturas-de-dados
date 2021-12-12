@@ -221,13 +221,13 @@ esportes.put('Natação', 8);
 
 let dicas = [
   'Semelhante ao futebol, jogado em uma quadra.',
-  'Times de 11 pessoas devem fazer a bola atravesar a baliza adversária, usando somente o pés.',
+  'Times devem fazer a bola atravesar a baliza adversária, usando somente o pés.',
   'Esporte de origem japonesa em que o atleta deve derrubar o adversário.',
-  'Arte marcial de origem japonesa, onde o atleta deve pontuar acertando golpes no adversário.',
-  'Deve-se executar manobras em uma prancha de 4 rodas. Famoso em áreas urbanas.',
+  'Arte marcial de origem japonesa, onde o atleta deve acertar golpes no adversário.',
+  'Deve-se executar manobras em uma prancha de 4 rodas.',
   'Manter-se em equilíbrio numa prancha em uma zona de rebentação de ondas',
-  'Jogado solo ou em duplas, usando uma raquete deve-se fazer a bola cair na área adversária.',
-  'Em um corpo de áqua os competidores executam técnicas para se movimentar e ultrapassar os adversários.',
+  'Usando uma raquete deve-se fazer a bola cair na área adversária.',
+  'Em um corpo de áqua os competidores participam de uma corrida.',
 ];
 let dicasExibir = new ArrayQueue();
 for (let i of dicas) {
