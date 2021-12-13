@@ -950,15 +950,22 @@ function resultado() {
     res.style.marginTop = "10px";
     res.style.marginBottom = "20px";
     if (correto){
-        res.style.color = "black";
-        res.innerText = "PARABÉNS, VOCÊ ACERTOU TUDO! Aperte o botão abaixo para jogar novamente."
+        res.innerText = "PARABÉNS, VOCÊ ACERTOU TUDO! Aperte o botão abaixo para jogar novamente.";
     } else{
-        res.style.color = "black";
-        res.innerText = "Não foi dessa vez! Aperte o botão abaixo para jogar novamente."
+        res.innerText = "Não foi dessa vez! Aperte o botão abaixo para jogar novamente.";
+    }
+
+    // Desabilitando botão após o primeiro click
+    document.getElementById("finalizar").disabled = true;
+
+    let inputs = document.getElementsByClassName("usable");
+    for (let i of inputs){
+        i.disabled = true;
     }
 
 }
 
+// Função que recarrega a página
 function jogarNovamente(){
     document.location.reload(true);
 }
