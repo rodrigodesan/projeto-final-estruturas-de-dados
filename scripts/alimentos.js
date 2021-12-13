@@ -286,6 +286,7 @@ let d8_i4;
 // Palavra 1
 function getd1i1(){
     d1_i1 = document.getElementById("dica1-item1");
+    
     let keys = alimentos.keysThatMatch(`${d1_i1.value}......`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
@@ -875,7 +876,7 @@ function resultado() {
     d1_i7_d4_i4 = document.getElementById('dica1-item7-dica4-item4');
   
     // palavra 2
-    d2_i2 = document.getElementById('dica2-item1');    
+    d2_i1 = document.getElementById('dica2-item1');    
     d2_i3 = document.getElementById('dica2-item3');
     d2_i4 = document.getElementById('dica2-item4');
     d2_i5 = document.getElementById('dica2-item5');
@@ -886,7 +887,7 @@ function resultado() {
     d3_i1 = document.getElementById('dica3-item1');
     d3_i3 = document.getElementById('dica3-item3');
     d3_i4 = document.getElementById('dica3-item4');
-    d5_i5 = document.getElementById('dica1-item1');
+    d3_i5 = document.getElementById('dica3-item5');
   
     // palavra 4
     d4_i1 = document.getElementById('dica4-item1');
@@ -907,14 +908,16 @@ function resultado() {
     d6_i3_d7_i6 = document.getElementById('dica6-item3-dica7-item6');
   
     // palavra 7
-    d7_i1 = document.getElementById('dica5-item1');
-    d7_i3 = document.getElementById('dica5-item3');
-    d7_i4 = document.getElementById('dica5-item4');
-    d7_i5 = document.getElementById('dica5-item5');
+    d7_i1 = document.getElementById('dica7-item1');
+    d7_i2 = document.getElementById('dica7-item2');
+    d7_i3 = document.getElementById('dica7-item3');
+    d7_i4 = document.getElementById('dica7-item4');
+    d7_i5 = document.getElementById('dica7-item5');
     
     // palavra 8
     d8_i1 = document.getElementById('dica8-item1');
     d8_i3 = document.getElementById('dica8-item3');
+    d8_i4 = document.getElementById('dica8-item4');
       
     palavra1 =
       d1_i1.value +
@@ -926,7 +929,7 @@ function resultado() {
       d1_i7_d4_i4.value;
   
     palavra2 =
-      d1_i1.value +
+      d2_i1.value +
       d1_i2_d2_i2.value +
       d2_i3.value +
       d2_i4.value +
@@ -951,7 +954,7 @@ function resultado() {
   
     palavra5 =
       d5_i1.value +
-      d4_i1_d5_i2.value +
+      d2_i7_d5_i2.value +
       d5_i3.value +
       d5_i4.value +
       d5_i5.value +
@@ -978,7 +981,7 @@ function resultado() {
 
     // Checagem palavra1
     let dica1 = document.getElementsByClassName("dica1");
-    let p1 = "  MOQUECA";
+    let p1 = "MOQUECA";
     if (alimentos.get(palavra1) != 1){
         for (let i = 0; i<dica1.length; i++){
             dica1[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";

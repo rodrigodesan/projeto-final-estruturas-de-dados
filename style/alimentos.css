@@ -1,7 +1,12 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'PressStart2P-Regular';
+    src: url('../font/PressStart2P-Regular.ttf');
+}
+
 body {
-    background-color: rgba(49, 213, 235, 0.774);
+    background-color: rgb(49, 124, 235);
     text-align: center;
     margin: auto;
     justify-content: center;
@@ -15,6 +20,8 @@ input {
     margin: 1px;
     padding: 2px;
     text-align: center;
+    font-weight: bolder;
+    border-color: grey;
 }
 
 
@@ -26,9 +33,14 @@ div {
 
 }
 
+#resultado {
+    font-family: 'PressStart2P-Regular';
+    max-width: 600px;
+}
+
 .nulo {
-    background-color:rgba(49, 213, 235, 0.774);
-    border-color: rgba(49, 213, 235, 0.774);
+    background-color:rgb(49, 124, 235);
+    border-color: rgb(49, 124, 235);
     box-shadow: none;
     border-style: double;
     text-decoration: none;
@@ -38,15 +50,20 @@ div {
     text-align: center;
 }
 
-
-.dica1:hover {
-    background-color: grey;
-}
-
 li {
     list-style-type: decimal;
+    font-size: 18px;
 }
-
 button {
+    font-size: 100%;
+    font-family: 'PressStart2P-Regular';
+    height: 60px;
+    width: 225px;
+    border-radius: 20px;
+    background-color: #eab1b1;
+    border-style: solid;
+    border-color: black;
     cursor: pointer;
+    font-family: 'PressStart2P-Regular', monospace;
+    margin-bottom: 5px;
 }

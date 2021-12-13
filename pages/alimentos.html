@@ -6,49 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palavras Cruzadas</title>
     <link rel="stylesheet" href="../style/alimentos.css">
+    <link rel="shortcut icon" href="../images/alimentos.ico" type="image/x-icon">
 </head>
-<header>
-    <h1>Alimentos</h1>
-</header>
-<div>
-    <!-- Linha 1 -->
-    <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text" name="" id=""><input class="nulo" disabled type="text"><input class="nulo" disabled value="1" type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text" value = "5"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text" value = "7"><br>
-      
-    <!-- Linha 2-->
-    <input class="nulo" disabled type="text"><input class="nulo"  disabled type="text"><input class="nulo" disabled  type="text"><input class="nulo" disabled  type="text"><input class="usable dica1" type="text" name="" id="dica1-item1" oninput="getd1i1()" maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica5" type="text" name="" id="dica5-item1" oninput="getd5i1()" maxlength="1"><input class="nulo" disabled type="text"><input class="usable dica7" type="text" name="" id="dica7-item1" oninput="getd7i1()" maxlength="1"><br>
+<body>
+    <header>
+        <h1>Alimentos</h1>
+    </header>
+    <div>
+        <!-- Linha 1 -->
+        <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text" name="" id=""><input class="nulo" disabled type="text"><input class="nulo" disabled value="1" type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text" value = "5"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text" value = "7"><br>
+        
+        <!-- Linha 2-->
+        <input class="nulo" disabled type="text"><input class="nulo"  disabled type="text"><input class="nulo" disabled  type="text"><input class="nulo" disabled  type="text"><input class="usable dica1" type="text" name="" id="dica1-item1" oninput="getd1i1()" maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica5" type="text" name="" id="dica5-item1" oninput="getd5i1()" maxlength="1"><input class="nulo" disabled type="text"><input class="usable dica7" type="text" name="" id="dica7-item1" oninput="getd7i1()" maxlength="1"><br>
 
-    <!-- Linha 3  -->
-    <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled  value = "2" type="text"><input class="usable dica2" type="text" name="" id="dica2-item1" oninput="getd2i1()" maxlength="1"><input class="usable dica1 dica2" type="text" name="" id="dica1-item2-dica2-item2" oninput="getd1i2()" maxlength="1"><input class="usable dica2" type="text" name="" id="dica2-item3" oninput="getd2i3()" maxlength="1"><input class="usable dica2" type="text" name="" id="dica2-item4" oninput="getd2i4()" maxlength="1"><input class="usable dica2" type="text" name="" id="dica2-item5" oninput="getd2i5()" maxlength="1"><input class="usable dica2" type="text" name="" id="dica2-item6" oninput="getd2i6()" maxlength="1"><input class="usable  dica5" type="text" name="" id="dica2-item7-dica5-item2" oninput="getd2i7()" maxlength="1"><input class="nulo" disabled  type="text"><input class="usable  dica7" type="text" name="" id="dica7-item2" oninput="getd7i2()" maxlength="1"><br>
+        <!-- Linha 3  -->
+        <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled  value = "2" type="text"><input class="usable dica2" type="text" name="" id="dica2-item1" oninput="getd2i1()" maxlength="1"><input class="usable dica1 dica2" type="text" name="" id="dica1-item2-dica2-item2" oninput="getd1i2()" maxlength="1"><input class="usable dica2" type="text" name="" id="dica2-item3" oninput="getd2i3()" maxlength="1"><input class="usable dica2" type="text" name="" id="dica2-item4" oninput="getd2i4()" maxlength="1"><input class="usable dica2" type="text" name="" id="dica2-item5" oninput="getd2i5()" maxlength="1"><input class="usable dica2" type="text" name="" id="dica2-item6" oninput="getd2i6()" maxlength="1"><input class="usable  dica2 dica5" type="text" name="" id="dica2-item7-dica5-item2" oninput="getd2i7()" maxlength="1"><input class="nulo" disabled  type="text"><input class="usable  dica7" type="text" name="" id="dica7-item2" oninput="getd7i2()" maxlength="1"><br>
 
-    <!-- Linha 4  -->
-    <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled  type="text"><input class="usable dica1" type="text" name="" id="dica1-item3" oninput="getd1i3()" maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica5" type="text" name="" id="dica5-item3" oninput="getd5i3()" maxlength="1"><input class="nulo" disabled type="text"><input class="usable dica7" type="text" name="" id="dica7-item3" oninput="getd7i3()" maxlength="1"><br>
+        <!-- Linha 4  -->
+        <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled  type="text"><input class="usable dica1" type="text" name="" id="dica1-item3" oninput="getd1i3()" maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica5" type="text" name="" id="dica5-item3" oninput="getd5i3()" maxlength="1"><input class="nulo" disabled type="text"><input class="usable dica7" type="text" name="" id="dica7-item3" oninput="getd7i3()" maxlength="1"><br>
 
-    <!-- Linha 5 -->
-    <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled value = "3" type="text"><input class="usable dica3" type="text" name="" id="dica3-item1" oninput="getd3i1()" maxlength="1"><input class="usable dica1 dica3" type="text" name="" id="dica1-item4-dica3-item2" oninput="getd1i4()" maxlength="1"><input class="usable dica3" type="text" name="" id="dica3-item3" oninput="getd3i3()" maxlength="1"><input class="usable dica3" type="text" name="" id="dica3-item4" oninput="getd3i4()" maxlength="1"><input class="usable dica3" type="text" name="" id="dica3-item5" oninput="getd3i5()" maxlength="1"><input class="nulo" type="text"><input class="usable dica5" type="text" name="" id="dica5-item4" oninput="getd5i4()" maxlength="1"><input class="nulo" disabled type="text"><input class="usable dica7" type="text" name="" id="dica7-item4" oninput="getd7i4()" maxlength="1"><br>
+        <!-- Linha 5 -->
+        <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled value = "3" type="text"><input class="usable dica3" type="text" name="" id="dica3-item1" oninput="getd3i1()" maxlength="1"><input class="usable dica1 dica3" type="text" name="" id="dica1-item4-dica3-item2" oninput="getd1i4()" maxlength="1"><input class="usable dica3" type="text" name="" id="dica3-item3" oninput="getd3i3()" maxlength="1"><input class="usable dica3" type="text" name="" id="dica3-item4" oninput="getd3i4()" maxlength="1"><input class="usable dica3" type="text" name="" id="dica3-item5" oninput="getd3i5()" maxlength="1"><input class="nulo" disabled type="text"><input class="usable dica5" type="text" name="" id="dica5-item4" oninput="getd5i4()" maxlength="1"><input class="nulo" disabled type="text"><input class="usable dica7" type="text" name="" id="dica7-item4" oninput="getd7i4()" maxlength="1"><br>
 
-    <!-- Linha 6 -->
-    <input class="nulo" disabled type = "text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica1" type="text" name="" id="dica1-item5" oninput="getd1i5()" maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text" value = "8"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica5" type="text" name="" id="dica5-item5" oninput="getd5i5()" maxlength="1"><input class="nulo" disabled type="text"><input class="usable dica7" type="text" name="" id="dica7-item5" oninput="getd7i5()" maxlength="1"><br>
+        <!-- Linha 6 -->
+        <input class="nulo" disabled type = "text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica1" type="text" name="" id="dica1-item5" oninput="getd1i5()" maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text" value = "8"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica5" type="text" name="" id="dica5-item5" oninput="getd5i5()" maxlength="1"><input class="nulo" disabled type="text"><input class="usable dica7" type="text" name="" id="dica7-item5" oninput="getd7i5()" maxlength="1"><br>
 
-    <!-- Linha 7  -->
-    <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica1" type="text" name="" id="dica1-item6" oninput="getd1i6()" maxlength="1"><input class="nulo"  disabled type="text"><input class="usable dica8" type="text" name="" id="dica8-item1" oninput="getd8i1()" maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"  value = "6"><input class="usable dica5 dica6" type="text" name="" id="dica5-item6-dica6-item1" oninput="getd5i6()" maxlength="1"><input class="usable dica6" type="text" name="" id="dica6-item2" oninput="getd6i2()" maxlength="1"><input class="usable dica6 dica7" type="text" name="" id="dica6-item3-dica7-item6" oninput="getd6i3()" maxlength="1"><br>
+        <!-- Linha 7  -->
+        <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica1" type="text" name="" id="dica1-item6" oninput="getd1i6()" maxlength="1"><input class="nulo"  disabled type="text"><input class="usable dica8" type="text" name="" id="dica8-item1" oninput="getd8i1()" maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"  value = "6"><input class="usable dica5 dica6" type="text" name="" id="dica5-item6-dica6-item1" oninput="getd5i6()" maxlength="1"><input class="usable dica6" type="text" name="" id="dica6-item2" oninput="getd6i2()" maxlength="1"><input class="usable dica6 dica7" type="text" name="" id="dica6-item3-dica7-item6" oninput="getd6i3()" maxlength="1"><br>
 
-    <!-- Linha 8 -->
-    <input class="nulo" disabled type="text" value = "4"><input class="usable dica4" type="text" name="" id="dica4-item1" oninput="getd4i1()" maxlength="1"><input class="usable dica4" type="text" name="" id="dica4-item2" oninput="getd4i2()" maxlength="1"><input class="usable dica4" type="text" name="" id="dica4-item3" oninput="getd4i3()" maxlength="1"><input class="usable dica1 dica4" type="text" name="" id="dica1-item7-dica4-item4" oninput="getd1i7()" maxlength="1"><input class="usable dica4" type="text" name="" id="dica4-item5" oninput="getd4i5()" maxlength="1"><input class="usable dica4 dica8" type="text" name="" id="dica4-item6-dica8-item2" oninput="getd4i6()"maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><br>
+        <!-- Linha 8 -->
+        <input class="nulo" disabled type="text" value = "4"><input class="usable dica4" type="text" name="" id="dica4-item1" oninput="getd4i1()" maxlength="1"><input class="usable dica4" type="text" name="" id="dica4-item2" oninput="getd4i2()" maxlength="1"><input class="usable dica4" type="text" name="" id="dica4-item3" oninput="getd4i3()" maxlength="1"><input class="usable dica1 dica4" type="text" name="" id="dica1-item7-dica4-item4" oninput="getd1i7()" maxlength="1"><input class="usable dica4" type="text" name="" id="dica4-item5" oninput="getd4i5()" maxlength="1"><input class="usable dica4 dica8" type="text" name="" id="dica4-item6-dica8-item2" oninput="getd4i6()"maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><br>
 
-    <!-- Linha 9 -->
-    <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica8" type="text" name="" id="dica8-item3" oninput="getd8i3()" maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><br>
+        <!-- Linha 9 -->
+        <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica8" type="text" name="" id="dica8-item3" oninput="getd8i3()" maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><br>
 
-    <!-- Linha 10 -->
-    <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica8" type="text" name="" id="dica8-item4" oninput="getd8i4()" maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text">
+        <!-- Linha 10 -->
+        <input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="usable dica8" type="text" name="" id="dica8-item4" oninput="getd8i4()" maxlength="1"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text"><input class="nulo" disabled type="text">
 
-    <p >Dicas</p>
-    
-    <div id="dicas"></div>
-    <button onclick="resultado()"> FINALIZAR</button>
-    <button onclick="jogarNovamente()"> JOGAR NOVAMENTE </button>
-    <button><a href="jogar.html" style="text-decoration: none; color:black">TROCAR MODO</a></button>
-    
-</div>
+        <p style="font-size: 18px;">Dicas</p>
+        
+        <div id="dicas" style="margin-bottom: 20px;"></div>
+        <button onclick="resultado()" > FINALIZAR</button>
+        <button><a href="jogar.html" style="text-decoration: none; color:black">TROCAR MODO</a></button><br>
+        <div id="resultado"></div><br>
+        <button onclick="jogarNovamente()"> JOGAR NOVAMENTE </button><br>
+        
+    </div>
 
 <script src="../scripts/alimentos.js" ></script>
 </body>
