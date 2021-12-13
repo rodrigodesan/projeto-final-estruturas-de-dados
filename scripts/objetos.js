@@ -208,43 +208,36 @@ for (let i of dicas){
 }
 
 
-let d1_i1;
-let d1_i2_d7_i1;
-let d1_i3;
-let d1_i4;
-let d7_i2;
-let d2_i1;
-let d7_i3;
-let d2_i2;
 let d4_i1;
-let d7_i4;
-let d5_i1;
-let d2_i3;
 let d4_i2;
-let d3_i1;
+let d6_i1;
+let d4_i3;
+let d3_i1_d6_i2;
 let d3_i2;
 let d3_i3;
-let d3_i4_d7_i5;
-let d3_i5;
-let d3_i6_d5_i2;
-let d2_i4;
-let d4_i3;
-let d7_i6;
-let d8_i1_d5_i3;
-let d8_i2;
-let d8_i3;
-let d8_i4_d2_i5;
-let d8_i5;
-let d8_i6_d4_i4;
-let d7_i7;
-let d5_i4;
-let d7_i8;
-let d5_i5;
-let d6_i1;
-let d6_i2_d5_i6;
+let d3_i4;
+let d3_i5_d4_i4;
 let d6_i3;
 let d6_i4;
+let d2_i1;
 let d6_i5;
+let d1_i1_d2_i2;
+let d1_i2;
+let d1_i3;
+let d1_i4;
+let d5_i1;
+let d5_i2_d6_i6;
+let d5_i3;
+let d5_i4;
+let d2_i3;
+let d6_i7;
+let d2_i4;
+let d6_i8_d7_i1;
+let d7_i2;
+let d7_i3;
+let d7_i4;
+let d7_i5;
+let d2_i5_d7_i6;
 let palavra1;
 let palavra2;
 let palavra3;
@@ -252,45 +245,44 @@ let palavra4;
 let palavra5;
 let palavra6;
 let palavra7;
-let palavra8;
 
 // Palavra 1
 function getd1i1(){
-    d1_i1 = document.getElementById("dica1-item1");
-    let keys = animais.keysThatMatch(`${d1_i1.value}...`);
+    d1_i1_d2_i2 = document.getElementById("dica1-item1-dica2-item2");
+    let keys = objetos.keysThatMatch(`${d1_i1_d2_i2.value}...`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'leao'){
+        if (keys[i] == 'anel'){
             pertence = true;
         }
     }
     if (pertence){
-        d1_i1.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
+        d1_i1_d2_i2.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
     } else{
-        d1_i1.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
+        d1_i1_d2_i2.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
     }
 }
 function getd1i2(){
-    d1_i2_d7_i1 = document.getElementById("dica1-item2-dica7-item1");
-    let keys = animais.keysThatMatch(`.${d1_i2_d7_i1.value}..`);
+    d1_i2 = document.getElementById("dica1-item2");
+    let keys = objetos.keysThatMatch(`.${d1_i2.value}..`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'leao'){
+        if (keys[i] == 'anel'){
             pertence = true;
         }
     }
     if (pertence){
-        d1_i2_d7_i1.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
+        d1_i2.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
     } else{
-        d1_i2_d7_i1.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
+        d1_i2.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
     }
 }
 function getd1i3(){
     d1_i3 = document.getElementById("dica1-item3");
-    let keys = animais.keysThatMatch(`..${d1_i3.value}.`);
+    let keys = objetos.keysThatMatch(`..${d1_i3.value}.`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'leao'){
+        if (keys[i] == 'anel'){
             pertence = true;
         }
     }
@@ -302,10 +294,10 @@ function getd1i3(){
 }
 function getd1i4(){
     d1_i4 = document.getElementById("dica1-item4");
-    let keys = animais.keysThatMatch(`...${d1_i4.value}`);
+    let keys = objetos.keysThatMatch(`...${d1_i4.value}`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'leao'){
+        if (keys[i] == 'anel'){
             pertence = true;
         }
     }
@@ -319,10 +311,10 @@ function getd1i4(){
 // Palavra2 
 function getd2i1(){
     d2_i1 = document.getElementById("dica2-item1");
-    let keys = animais.keysThatMatch(`${d2_i1.value}....`);
+    let keys = objetos.keysThatMatch(`${d2_i1.value}....`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'zebra'){
+        if (keys[i] == 'caixa'){
             pertence = true;
         }
     }
@@ -332,27 +324,12 @@ function getd2i1(){
         d2_i1.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
     }
 }
-function getd2i2(){
-    d2_i2 = document.getElementById("dica2-item2");
-    let keys = animais.keysThatMatch(`.${d2_i2.value}...`);
-    let pertence = false
-    for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'zebra'){
-            pertence = true;
-        }
-    }
-    if (pertence){
-        d2_i2.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
-    } else{
-        d2_i2.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
-    }
-}
 function getd2i3(){
     d2_i3 = document.getElementById("dica2-item3");
-    let keys = animais.keysThatMatch(`..${d2_i3.value}..`);
+    let keys = objetos.keysThatMatch(`..${d2_i3.value}..`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'zebra'){
+        if (keys[i] == 'caixa'){
             pertence = true;
         }
     }
@@ -364,10 +341,10 @@ function getd2i3(){
 }
 function getd2i4(){
     d2_i4 = document.getElementById("dica2-item4");
-    let keys = animais.keysThatMatch(`...${d2_i4.value}.`);
+    let keys = objetos.keysThatMatch(`...${d2_i4.value}.`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'zebra'){
+        if (keys[i] == 'caixa'){
             pertence = true;
         }
     }
@@ -377,29 +354,44 @@ function getd2i4(){
         d2_i4.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
     }
 }
-
-// Palavra3
-function getd3i1(){
-    d3_i1 = document.getElementById("dica3-item1");
-    let keys = animais.keysThatMatch(`${d3_i1.value}.....`);
+function getd2i5(){
+    d2_i5_d7_i6 = document.getElementById("dica2-item5-dica7-item6");
+    let keys = objetos.keysThatMatch(`....${d2_i5_d7_i6.value}`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'girafa'){
+        if (keys[i] == 'caixa'){
             pertence = true;
         }
     }
     if (pertence){
-        d3_i1.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
+        d2_i5_d7_i6.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
     } else{
-        d3_i1.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
+        d2_i5_d7_i6.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
+    }
+}
+
+// Palavra3
+function getd3i1(){
+    d3_i1_d6_i2 = document.getElementById("dica3-item1-dica6-item2");
+    let keys = objetos.keysThatMatch(`${d3_i1_d6_i2.value}....`);
+    let pertence = false
+    for (let i = 0; i<keys.length; i++ ){
+        if (keys[i] == 'livro'){
+            pertence = true;
+        }
+    }
+    if (pertence){
+        d3_i1_d6_i2.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
+    } else{
+        d3_i1_d6_i2.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
     }
 }
 function getd3i2(){
     d3_i2 = document.getElementById("dica3-item2");
-    let keys = animais.keysThatMatch(`.${d3_i2.value}....`);
+    let keys = objetos.keysThatMatch(`.${d3_i2.value}...`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'girafa'){
+        if (keys[i] == 'livro'){
             pertence = true;
         }
     }
@@ -411,10 +403,10 @@ function getd3i2(){
 }
 function getd3i3(){
     d3_i3 = document.getElementById("dica3-item3");
-    let keys = animais.keysThatMatch(`..${d3_i3.value}...`);
+    let keys = objetos.keysThatMatch(`..${d3_i3.value}..`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'girafa'){
+        if (keys[i] == 'livro'){
             pertence = true;
         }
     }
@@ -425,58 +417,43 @@ function getd3i3(){
     }
 }
 function getd3i4(){
-    d3_i4_d7_i5 = document.getElementById("dica3-item4-dica7-item5");
-    let keys = animais.keysThatMatch(`...${d3_i4_d7_i5.value}..`);
+    d3_i4 = document.getElementById("dica3-item4");
+    let keys = objetos.keysThatMatch(`...${d3_i4.value}.`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'girafa'){
+        if (keys[i] == 'livro'){
             pertence = true;
         }
     }
     if (pertence){
-        d3_i4_d7_i5.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
+        d3_i4.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
     } else{
-        d3_i4_d7_i5.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
+        d3_i4.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
     }
 }
 function getd3i5(){
-    d3_i5 = document.getElementById("dica3-item5");
-    let keys = animais.keysThatMatch(`....${d3_i5.value}.`);
+    d3_i5_d4_i4 = document.getElementById("dica3-item5-dica4-item4");
+    let keys = objetos.keysThatMatch(`....${d3_i5_d4_i4.value}`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'girafa'){
+        if (keys[i] == 'livro'){
             pertence = true;
         }
     }
     if (pertence){
-        d3_i5.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
+        d3_i5_d4_i4.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
     } else{
-        d3_i5.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
-    }
-}
-function getd3i6(){
-    d3_i6_d5_i2 = document.getElementById("dica3-item6-dica5-item2");
-    let keys = animais.keysThatMatch(`.....${d3_i6_d5_i2.value}`);
-    let pertence = false
-    for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'girafa'){
-            pertence = true;
-        }
-    }
-    if (pertence){
-        d3_i6_d5_i2.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
-    } else{
-        d3_i6_d5_i2.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
+        d3_i5_d4_i4.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
     }
 }
 
 //Palavra4
 function getd4i1(){
     d4_i1 = document.getElementById("dica4-item1");
-    let keys = animais.keysThatMatch(`${d4_i1.value}...`);
+    let keys = objetos.keysThatMatch(`${d4_i1.value}...`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'urso'){
+        if (keys[i] == 'dado'){
             pertence = true;
         }
     }
@@ -488,10 +465,10 @@ function getd4i1(){
 }
 function getd4i2(){
     d4_i2 = document.getElementById("dica4-item2");
-    let keys = animais.keysThatMatch(`.${d4_i2.value}..`);
+    let keys = objetos.keysThatMatch(`.${d4_i2.value}..`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'urso'){
+        if (keys[i] == 'dado'){
             pertence = true;
         }
     }
@@ -503,10 +480,10 @@ function getd4i2(){
 }
 function getd4i3(){
     d4_i3 = document.getElementById("dica4-item3");
-    let keys = animais.keysThatMatch(`..${d4_i3.value}.`);
+    let keys = objetos.keysThatMatch(`..${d4_i3.value}.`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'urso'){
+        if (keys[i] == 'dado'){
             pertence = true;
         }
     }
@@ -516,13 +493,14 @@ function getd4i3(){
         d4_i3.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
     }
 }
+
 // Palavra5
 function getd5i1(){
     d5_i1 = document.getElementById("dica5-item1");
-    let keys = animais.keysThatMatch(`${d5_i1.value}.....`);
+    let keys = objetos.keysThatMatch(`${d5_i1.value}...`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'camelo'){
+        if (keys[i] == 'vela'){
             pertence = true;
         }
     }
@@ -532,12 +510,42 @@ function getd5i1(){
         d5_i1.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
     }
 }
-function getd5i4(){
-    d5_i4 = document.getElementById("dica5-item4");
-    let keys = animais.keysThatMatch(`...${d5_i4.value}..`);
+function getd5i2(){
+    d5_i2_d6_i6 = document.getElementById("dica5-item2-dica6-item6");
+    let keys = objetos.keysThatMatch(`.${d5_i2_d6_i6.value}..`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'camelo'){
+        if (keys[i] == 'vela'){
+            pertence = true;
+        }
+    }
+    if (pertence){
+        d5_i2_d6_i6.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
+    } else{
+        d5_i2_d6_i6.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
+    }
+}
+function getd5i3(){
+    d5_i3 = document.getElementById("dica5-item3");
+    let keys = objetos.keysThatMatch(`..${d5_i3.value}.`);
+    let pertence = false
+    for (let i = 0; i<keys.length; i++ ){
+        if (keys[i] == 'vela'){
+            pertence = true;
+        }
+    }
+    if (pertence){
+        d5_i3.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
+    } else{
+        d5_i3.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
+    }
+}
+function getd5i4(){
+    d5_i4 = document.getElementById("dica5-item4");
+    let keys = objetos.keysThatMatch(`...${d5_i4.value}`);
+    let pertence = false
+    for (let i = 0; i<keys.length; i++ ){
+        if (keys[i] == 'vela'){
             pertence = true;
         }
     }
@@ -547,29 +555,14 @@ function getd5i4(){
         d5_i4.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
     }
 }
-function getd5i5(){
-    d5_i5 = document.getElementById("dica5-item5");
-    let keys = animais.keysThatMatch(`....${d5_i5.value}.`);
-    let pertence = false
-    for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'camelo'){
-            pertence = true;
-        }
-    }
-    if (pertence){
-        d5_i5.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
-    } else{
-        d5_i5.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
-    }
-}
 
 // Palavra6
 function getd6i1(){
     d6_i1 = document.getElementById("dica6-item1");
-    let keys = animais.keysThatMatch(`${d6_i1.value}....`);
+    let keys = objetos.keysThatMatch(`${d6_i1.value}.......`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'cobra'){
+        if (keys[i] == 'alfinete'){
             pertence = true;
         }
     }
@@ -579,27 +572,12 @@ function getd6i1(){
         d6_i1.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
     }
 }
-function getd6i2(){
-    d6_i2_d5_i6 = document.getElementById("dica6-item2-dica5-item6");
-    let keys = animais.keysThatMatch(`.${d6_i2_d5_i6.value}...`);
-    let pertence = false
-    for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'cobra'){
-            pertence = true;
-        }
-    }
-    if (pertence){
-        d6_i2_d5_i6.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
-    } else{
-        d6_i2_d5_i6.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
-    }
-}
 function getd6i3(){
     d6_i3 = document.getElementById("dica6-item3");
-    let keys = animais.keysThatMatch(`..${d6_i3.value}..`);
+    let keys = objetos.keysThatMatch(`..${d6_i3.value}.....`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'cobra'){
+        if (keys[i] == 'alfinete'){
             pertence = true;
         }
     }
@@ -611,10 +589,10 @@ function getd6i3(){
 }
 function getd6i4(){
     d6_i4 = document.getElementById("dica6-item4");
-    let keys = animais.keysThatMatch(`...${d6_i4.value}.`);
+    let keys = objetos.keysThatMatch(`...${d6_i4.value}....`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'cobra'){
+        if (keys[i] == 'alfinete'){
             pertence = true;
         }
     }
@@ -626,10 +604,10 @@ function getd6i4(){
 }
 function getd6i5(){
     d6_i5 = document.getElementById("dica6-item5");
-    let keys = animais.keysThatMatch(`....${d6_i5.value}`);
+    let keys = objetos.keysThatMatch(`....${d6_i5.value}...`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'cobra'){
+        if (keys[i] == 'alfinete'){
             pertence = true;
         }
     }
@@ -639,14 +617,44 @@ function getd6i5(){
         d6_i5.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
     }
 }
+function getd6i7(){
+    d6_i7 = document.getElementById("dica6-item7");
+    let keys = objetos.keysThatMatch(`......${d6_i7.value}.`);
+    let pertence = false
+    for (let i = 0; i<keys.length; i++ ){
+        if (keys[i] == 'alfinete'){
+            pertence = true;
+        }
+    }
+    if (pertence){
+        d6_i7.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
+    } else{
+        d6_i7.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
+    }
+}
+function getd6i8(){
+    d6_i8_d7_i1 = document.getElementById("dica6-item8-dica7-item1");
+    let keys = objetos.keysThatMatch(`.......${d6_i8_d7_i1.value}`);
+    let pertence = false
+    for (let i = 0; i<keys.length; i++ ){
+        if (keys[i] == 'alfinete'){
+            pertence = true;
+        }
+    }
+    if (pertence){
+        d6_i8_d7_i1.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
+    } else{
+        d6_i8_d7_i1.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
+    }
+}
 
 // Palavra7
 function getd7i2(){
     d7_i2 = document.getElementById("dica7-item2");
-    let keys = animais.keysThatMatch(`.${d7_i2.value}......`);
+    let keys = objetos.keysThatMatch(`.${d7_i2.value}....`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'elefante'){
+        if (keys[i] == 'escova'){
             pertence = true;
         }
     }
@@ -658,10 +666,10 @@ function getd7i2(){
 }
 function getd7i3(){
     d7_i3 = document.getElementById("dica7-item3");
-    let keys = animais.keysThatMatch(`..${d7_i3.value}.....`);
+    let keys = objetos.keysThatMatch(`..${d7_i3.value}...`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'elefante'){
+        if (keys[i] == 'escova'){
             pertence = true;
         }
     }
@@ -673,10 +681,10 @@ function getd7i3(){
 }
 function getd7i4(){
     d7_i4 = document.getElementById("dica7-item4");
-    let keys = animais.keysThatMatch(`...${d7_i4.value}....`);
+    let keys = objetos.keysThatMatch(`...${d7_i4.value}..`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'elefante'){
+        if (keys[i] == 'escova'){
             pertence = true;
         }
     }
@@ -686,143 +694,21 @@ function getd7i4(){
         d7_i4.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
     }
 }
-function getd7i6(){
-    d7_i6 = document.getElementById("dica7-item6");
-    let keys = animais.keysThatMatch(`.....${d7_i6.value}..`);
+function getd7i5(){
+    d7_i5 = document.getElementById("dica7-item5");
+    let keys = objetos.keysThatMatch(`....${d7_i5.value}.`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'elefante'){
+        if (keys[i] == 'escova'){
             pertence = true;
         }
     }
     if (pertence){
-        d7_i6.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
+        d7_i5.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
     } else{
-        d7_i6.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
+        d7_i5.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
     }
 }
-function getd7i7(){
-    d7_i7 = document.getElementById("dica7-item7");
-    let keys = animais.keysThatMatch(`......${d7_i7.value}.`);
-    let pertence = false
-    for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'elefante'){
-            pertence = true;
-        }
-    }
-    if (pertence){
-        d7_i7.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
-    } else{
-        d7_i7.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
-    }
-}
-function getd7i8(){
-    d7_i8 = document.getElementById("dica7-item8");
-    let keys = animais.keysThatMatch(`.......${d7_i8.value}`);
-    let pertence = false
-    for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'elefante'){
-            pertence = true;
-        }
-    }
-    if (pertence){
-        d7_i8.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
-    } else{
-        d7_i8.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
-    }
-}
-//Palavra8
-function getd8i1(){
-    d8_i1_d5_i3 = document.getElementById("dica8-item1-dica5-item3");
-    let keys = animais.keysThatMatch(`${d8_i1_d5_i3.value}.....`);
-    let pertence = false
-    for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'macaco'){
-            pertence = true;
-        }
-    }
-    if (pertence){
-        d8_i1_d5_i3.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
-    } else{
-        d8_i1_d5_i3.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
-    }
-}
-function getd8i2(){
-    d8_i2 = document.getElementById("dica8-item2");
-    let keys = animais.keysThatMatch(`.${d8_i2.value}....`);
-    let pertence = false
-    for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'macaco'){
-            pertence = true;
-        }
-    }
-    if (pertence){
-        d8_i2.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
-    } else{
-        d8_i2.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
-    }
-}
-function getd8i3(){
-    d8_i3 = document.getElementById("dica8-item3");
-    let keys = animais.keysThatMatch(`..${d8_i3.value}...`);
-    let pertence = false
-    for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'macaco'){
-            pertence = true;
-        }
-    }
-    if (pertence){
-        d8_i3.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
-    } else{
-        d8_i3.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
-    }
-}
-function getd8i4(){
-    d8_i4_d2_i5 = document.getElementById("dica8-item4-dica2-item5");
-    let keys = animais.keysThatMatch(`...${d8_i4_d2_i5.value}..`);
-    let pertence = false
-    for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'macaco'){
-            pertence = true;
-        }
-    }
-    if (pertence){
-        d8_i4_d2_i5.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
-    } else{
-        d8_i4_d2_i5.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
-    }
-}
-function getd8i5(){
-    d8_i5 = document.getElementById("dica8-item5");
-    let keys = animais.keysThatMatch(`....${d8_i5.value}.`);
-    let pertence = false
-    for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'macaco'){
-            pertence = true;
-        }
-    }
-    if (pertence){
-        d8_i5.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
-    } else{
-        d8_i5.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
-    }
-}
-function getd8i6(){
-    d8_i6_d4_i4 = document.getElementById("dica8-item6-dica4-item4");
-    let keys = animais.keysThatMatch(`.....${d8_i6_d4_i4.value}`);
-    let pertence = false
-    for (let i = 0; i<keys.length; i++ ){
-        if (keys[i] == 'macaco'){
-            pertence = true;
-        }
-    }
-    if (pertence){
-        d8_i6_d4_i4.style.backgroundColor = "rgba(190, 255, 190, 0.801)";
-    } else{
-        d8_i6_d4_i4.style.backgroundColor = "rgba(255, 158, 158, 0.746)";
-    }
-}
-
 
 let pDicas = document.getElementById("dicas");
 var li;
@@ -835,58 +721,50 @@ for (let i = 0; i < dicas.length; i++){
 }
 
 function resultado(){
-    d1_i1 = document.getElementById("dica1-item1");
-    d1_i2_d7_i1 = document.getElementById("dica1-item2-dica7-item1");
-    d1_i3 = document.getElementById("dica1-item3");
-    d1_i4 = document.getElementById("dica1-item4");
-    d7_i2 = document.getElementById("dica7-item2");
-    d2_i1 = document.getElementById("dica2-item1");
-    d7_i3 = document.getElementById("dica7-item3");
-    d2_i2 = document.getElementById("dica2-item2");
     d4_i1 = document.getElementById("dica4-item1");
-    d7_i4 = document.getElementById("dica7-item4");
-    d5_i1 = document.getElementById("dica5-item1");
-    d2_i3 = document.getElementById("dica2-item3");
     d4_i2 = document.getElementById("dica4-item2");
-    d3_i1 = document.getElementById("dica3-item1");
+    d6_i1 = document.getElementById("dica6-item1");
+    d4_i3 = document.getElementById("dica4-item3");
+    d3_i1_d6_i2 = document.getElementById("dica3-item1-dica6-item2");
     d3_i2 = document.getElementById("dica3-item2");
     d3_i3 = document.getElementById("dica3-item3");
-    d3_i4_d7_i5 = document.getElementById("dica3-item4-dica7-item5");
-    d3_i5 = document.getElementById("dica3-item5");
-    d3_i6_d5_i2 = document.getElementById("dica3-item6-dica5-item2");
-    d2_i4 = document.getElementById("dica2-item4");
-    d4_i3 = document.getElementById("dica4-item3");
-    d7_i6 = document.getElementById("dica7-item6");
-    d8_i1_d5_i3 = document.getElementById("dica8-item1-dica5-item3");
-    d8_i2 = document.getElementById("dica8-item2");
-    d8_i3 = document.getElementById("dica8-item3");
-    d8_i4_d2_i5 = document.getElementById("dica8-item4-dica2-item5");
-    d8_i5 = document.getElementById("dica8-item5");
-    d8_i6_d4_i4 = document.getElementById("dica8-item6-dica4-item4");
-    d7_i7 = document.getElementById("dica7-item7");
-    d5_i4 = document.getElementById("dica5-item4");
-    d7_i8 = document.getElementById("dica7-item8");
-    d5_i5 = document.getElementById("dica5-item5");
-    d6_i1 = document.getElementById("dica6-item1");
-    d6_i2_d5_i6 = document.getElementById("dica6-item2-dica5-item6");
+    d3_i4 = document.getElementById("dica3-item4");
+    d3_i5_d4_i4 = document.getElementById("dica3-item5-dica4-item4");
     d6_i3 = document.getElementById("dica6-item3");
     d6_i4 = document.getElementById("dica6-item4");
+    d2_i1 = document.getElementById("dica2-item1");
     d6_i5 = document.getElementById("dica6-item5");
-    palavra1 = d1_i1.value + d1_i2_d7_i1.value + d1_i3.value + d1_i4.value;
-    palavra2 = d2_i1.value + d2_i2.value + d2_i3.value + d2_i4.value + d8_i4_d2_i5.value;
-    palavra3 = d3_i1.value + d3_i2.value + d3_i3.value + d3_i4_d7_i5.value + d3_i5.value + d3_i6_d5_i2.value;
-    palavra4 = d4_i1.value + d4_i2.value + d4_i3.value + d8_i6_d4_i4.value;
-    palavra5 = d5_i1.value + d3_i6_d5_i2.value + d8_i1_d5_i3.value + d5_i4.value + d5_i5.value + d6_i2_d5_i6.value;
-    palavra6 = d6_i1.value + d6_i2_d5_i6.value + d6_i3.value + d6_i4.value + d6_i5.value;
-    palavra7 = d1_i2_d7_i1.value + d7_i2.value + d7_i3.value + d7_i4.value + d3_i4_d7_i5.value + d7_i6.value + d7_i7.value + d7_i8.value;
-    palavra8 = d8_i1_d5_i3.value + d8_i2.value + d8_i3.value + d8_i4_d2_i5.value + d8_i5.value + d8_i6_d4_i4.value;
+    d1_i1_d2_i2 = document.getElementById("dica1-item1-dica2-item2");
+    d1_i2 = document.getElementById("dica1-item2");
+    d1_i3 = document.getElementById("dica1-item3");
+    d1_i4 = document.getElementById("dica1-item4");
+    d5_i1 = document.getElementById("dica5-item1");
+    d5_i2_d6_i6 = document.getElementById("dica5-item2-dica6-item6");
+    d5_i3 = document.getElementById("dica5-item3");
+    d5_i4 = document.getElementById("dica5-item4");
+    d2_i3 = document.getElementById("dica2-item3");
+    d6_i7 = document.getElementById("dica6-item7");
+    d2_i4 = document.getElementById("dica2-item4");
+    d6_i8_d7_i1 = document.getElementById("dica6-item8-dica7-item1");
+    d7_i2 = document.getElementById("dica7-item2");
+    d7_i3 = document.getElementById("dica7-item3");
+    d7_i4 = document.getElementById("dica7-item4");
+    d7_i5 = document.getElementById("dica7-item5");
+    d2_i5_d7_i6 = document.getElementById("dica2-item5-dica7-item6");
+    palavra1 = d1_i1_d2_i2.value + d1_i2.value + d1_i3.value + d1_i4.value;
+    palavra2 = d2_i1.value + d1_i1_d2_i2.value + d2_i3.value + d2_i4.value + d2_i5_d7_i6.value;
+    palavra3 = d3_i1_d6_i2.value + d3_i2.value + d3_i3.value + d3_i4.value + d3_i5_d4_i4.value;
+    palavra4 = d4_i1.value + d4_i2.value + d4_i3.value + d3_i5_d4_i4.value;
+    palavra5 = d5_i1.value + d5_i2_d6_i6.value + d5_i3.value + d5_i4.value;
+    palavra6 = d6_i1.value + d3_i1_d6_i2.value + d6_i3.value + d6_i4.value + d6_i5.value + d5_i2_d6_i6.value + d6_i7.value + d6_i8_d7_i1.value;
+    palavra7 = d6_i8_d7_i1.value + d7_i2.value + d7_i3.value + d7_i4.value + d7_i5.value + d2_i5_d7_i6.value;
 
     let correto = true;
 
     // Checagem palavra1
     let dica1 = document.getElementsByClassName("dica1");
-    let p1 = "LEÃO";
-    if (animais.get(palavra1) != 1){
+    let p1 = "ANEL";
+    if (objetos.get(palavra1) != 1){
         correto = false;
         for (let i = 0; i<dica1.length; i++){
             dica1[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
@@ -895,10 +773,11 @@ function resultado(){
     for (let i = 0;i<p1.length;i++){
         dica1[i].value = p1[i];
     }
+
     // Checagem palavra2
     let dica2 = document.getElementsByClassName("dica2");
-    let p2 = "ZEBRA";
-    if (animais.get(palavra2) != 2){
+    let p2 = "CAIXA";
+    if (objetos.get(palavra2) != 2){
         correto = false;
         for (let i = 0; i<dica2.length; i++){
             dica2[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
@@ -907,10 +786,11 @@ function resultado(){
     for (let i=0;i<p2.length;i++){
         dica2[i].value = p2[i];
     }
+
     // Checagem palavra3
     let dica3 = document.getElementsByClassName("dica3");
-    let p3 = "GIRAFA";
-    if (animais.get(palavra3) != 3){
+    let p3 = "LIVRO";
+    if (objetos.get(palavra3) != 3){
         correto = false;
         for (let i = 0; i<dica3.length; i++){
             dica3[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
@@ -919,10 +799,11 @@ function resultado(){
     for (let i=0;i<p3.length;i++){
         dica3[i].value = p3[i];
     }
+
     // Checagem palavra4
     let dica4 = document.getElementsByClassName("dica4");
-    let p4 = "URSO";
-    if (animais.get(palavra4) != 4){
+    let p4 = "DADO";
+    if (objetos.get(palavra4) != 4){
         correto = false;
         for (let i = 0; i<dica4.length; i++){
             dica4[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
@@ -931,10 +812,11 @@ function resultado(){
     for (let i=0;i<p4.length;i++){
         dica4[i].value = p4[i];
     }
+
     // Checagem palavra5
     let dica5 = document.getElementsByClassName("dica5");
-    let p5 = "CAMELO";
-    if (animais.get(palavra5) != 5){
+    let p5 = "VELA";
+    if (objetos.get(palavra5) != 5){
         correto = false;
         for (let i = 0; i<dica5.length; i++){
             dica5[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
@@ -946,8 +828,8 @@ function resultado(){
 
     // Checagem palavra6
     let dica6 = document.getElementsByClassName("dica6");
-    let p6 = "COBRA";
-    if (animais.get(palavra6) != 6){
+    let p6 = "ALFINETE";
+    if (objetos.get(palavra6) != 6){
         correto = false;
         for (let i = 0; i<dica6.length; i++){
             dica6[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
@@ -959,8 +841,8 @@ function resultado(){
 
     // Checagem palavra7
     let dica7 = document.getElementsByClassName("dica7");
-    let p7 = "ELEFANTE";
-    if (animais.get(palavra7) != 7){
+    let p7 = "ESCOVA";
+    if (objetos.get(palavra7) != 7){
         correto = false;
         for (let i = 0; i<dica7.length; i++){
             dica7[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
@@ -968,19 +850,6 @@ function resultado(){
     }
     for (let i=0;i<p7.length;i++){
         dica7[i].value = p7[i];
-    }
-
-    // Checagem palavra8
-    let dica8 = document.getElementsByClassName("dica8");
-    let p8 = "MACACO";
-    if (animais.get(palavra8) != 8){
-        correto = false;
-        for (let i = 0; i<dica8.length; i++){
-            dica8[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
-        }
-    }
-    for (let i=0;i<p8.length;i++){
-        dica8[i].value = p8[i];
     }
 
     // Mensagem de resultado
@@ -999,12 +868,3 @@ function resultado(){
 function jogarNovamente(){
     document.location.reload(true);
 }
-
-
-
-
-
-
-
-
-

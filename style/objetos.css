@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #FF69B4;
+    background-color: #6B8E23;
     text-align: center;
     margin: auto;
     justify-content: center;
@@ -36,8 +36,8 @@ div {
 }
 
 .nulo {
-    background-color:#FF69B4;
-    border-color: #FF69B4;
+    background-color:#6B8E23;
+    border-color: #6B8E23;
     box-shadow: none;
     border-style: double;
     text-decoration: none;
