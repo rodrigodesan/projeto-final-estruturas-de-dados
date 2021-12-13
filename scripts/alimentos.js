@@ -282,7 +282,7 @@ let d8_i4;
 // Palavra 1
 function getd1i1(){
     d1_i1 = document.getElementById("dica1-item1");
-    let keys = animais.keysThatMatch(`${d1_i1.value}...`);
+    let keys = alimentos.keysThatMatch(`${d1_i1.value}...`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'moqueca'){
@@ -297,7 +297,7 @@ function getd1i1(){
 }
 function getd1i2(){
     d1_i2_d7_i1 = document.getElementById("dica1-item2-dica7-item1");
-    let keys = animais.keysThatMatch(`.${d1_i2_d2_i2.value}..`);
+    let keys = alimentos.keysThatMatch(`.${d1_i2_d2_i2.value}..`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'moqueca'){
@@ -312,7 +312,7 @@ function getd1i2(){
 }
 function getd1i3(){
     d1_i3 = document.getElementById("dica1-item3");
-    let keys = animais.keysThatMatch(`..${d1_i3.value}.`);
+    let keys = alimentos.keysThatMatch(`..${d1_i3.value}.`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'moqueca'){
@@ -327,7 +327,7 @@ function getd1i3(){
 }
 function getd1i4(){
     d1_i4 = document.getElementById("dica1-item4");
-    let keys = animais.keysThatMatch(`...${d1_i4_d3_i2.value}`);
+    let keys = alimentos.keysThatMatch(`...${d1_i4_d3_i2.value}`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'moqueca'){
@@ -342,7 +342,7 @@ function getd1i4(){
 }
 function getd1i5(){
     d1_i2_d7_i1 = document.getElementById("dica1-item2-dica7-item1");
-    let keys = animais.keysThatMatch(`.${d1_i5.value}..`);
+    let keys = alimentos.keysThatMatch(`.${d1_i5.value}..`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'moqueca'){
@@ -357,7 +357,7 @@ function getd1i5(){
 }
 function getd1i6(){
     d1_i2_d7_i1 = document.getElementById("dica1-item2-dica7-item1");
-    let keys = animais.keysThatMatch(`.${d1_i6.value}..`);
+    let keys = alimentos.keysThatMatch(`.${d1_i6.value}..`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'moqueca'){
@@ -372,7 +372,7 @@ function getd1i6(){
 }
 function getd1i7(){
     d1_i2_d7_i1 = document.getElementById("dica1-item2-dica7-item1");
-    let keys = animais.keysThatMatch(`.${d1_i7_d4_i4.value}..`);
+    let keys = alimentos.keysThatMatch(`.${d1_i7_d4_i4.value}..`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'moqueca'){
@@ -389,7 +389,7 @@ function getd1i7(){
 // Palavra2 
 function getd2i1(){
     d2_i1 = document.getElementById("dica2-item1");
-    let keys = animais.keysThatMatch(`${d2_i1.value}....`);
+    let keys = alimentos.keysThatMatch(`${d2_i1.value}....`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sorvete'){
@@ -404,7 +404,7 @@ function getd2i1(){
 }
 function getd2i3(){
     d2_i3 = document.getElementById("dica2-item3");
-    let keys = animais.keysThatMatch(`..${d2_i3.value}..`);
+    let keys = alimentos.keysThatMatch(`..${d2_i3.value}..`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sorvete'){
@@ -419,7 +419,7 @@ function getd2i3(){
 }
 function getd2i4(){
     d2_i4 = document.getElementById("dica2-item4");
-    let keys = animais.keysThatMatch(`...${d2_i4.value}.`);
+    let keys = alimentos.keysThatMatch(`...${d2_i4.value}.`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sorvete'){
@@ -434,7 +434,7 @@ function getd2i4(){
 }
 function getd2i5(){
     d2_i1 = document.getElementById("dica2-item1");
-    let keys = animais.keysThatMatch(`${d2_i5.value}....`);
+    let keys = alimentos.keysThatMatch(`${d2_i5.value}....`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sorvete'){
@@ -449,7 +449,7 @@ function getd2i5(){
 }
 function getd2i6(){
     d2_i1 = document.getElementById("dica2-item1");
-    let keys = animais.keysThatMatch(`${d2_i6.value}....`);
+    let keys = alimentos.keysThatMatch(`${d2_i6.value}....`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sorvete'){
@@ -464,7 +464,7 @@ function getd2i6(){
 }
 function getd2i7(){
     d2_i1 = document.getElementById("dica2-item1");
-    let keys = animais.keysThatMatch(`${d2_i7_d5_i2.value}....`);
+    let keys = alimentos.keysThatMatch(`${d2_i7_d5_i2.value}....`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sorvete'){
@@ -481,7 +481,7 @@ function getd2i7(){
 // Palavra3
 function getd3i1(){
     d3_i1 = document.getElementById("dica3-item1");
-    let keys = animais.keysThatMatch(`${d3_i1.value}.....`);
+    let keys = alimentos.keysThatMatch(`${d3_i1.value}.....`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sushi'){
@@ -496,7 +496,7 @@ function getd3i1(){
 }
 function getd3i3(){
     d3_i2 = document.getElementById("dica3-item2");
-    let keys = animais.keysThatMatch(`.${d3_i3.value}....`);
+    let keys = alimentos.keysThatMatch(`.${d3_i3.value}....`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sushi'){
@@ -511,7 +511,7 @@ function getd3i3(){
 }
 function getd3i4(){
     d3_i3 = document.getElementById("dica3-item3");
-    let keys = animais.keysThatMatch(`..${d3_i4.value}...`);
+    let keys = alimentos.keysThatMatch(`..${d3_i4.value}...`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sushi'){
@@ -526,7 +526,7 @@ function getd3i4(){
 }
 function getd3i5(){
     d3_i4_d7_i5 = document.getElementById("dica3-item4-dica7-item5");
-    let keys = animais.keysThatMatch(`...${d3_i5.value}..`);
+    let keys = alimentos.keysThatMatch(`...${d3_i5.value}..`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sushi'){
@@ -543,7 +543,7 @@ function getd3i5(){
 //Palavra4
 function getd4i1(){
     d4_i1 = document.getElementById("dica4-item1");
-    let keys = animais.keysThatMatch(`${d4_i1.value}...`);
+    let keys = alimentos.keysThatMatch(`${d4_i1.value}...`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] ='banana'){
@@ -558,7 +558,7 @@ function getd4i1(){
 }
 function getd4i2(){
     d4_i2 = document.getElementById("dica4-item2");
-    let keys = animais.keysThatMatch(`.${d4_i2.value}..`);
+    let keys = alimentos.keysThatMatch(`.${d4_i2.value}..`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'banana'){
@@ -573,7 +573,7 @@ function getd4i2(){
 }
 function getd4i3(){
     d4_i3 = document.getElementById("dica4-item3");
-    let keys = animais.keysThatMatch(`..${d4_i3.value}.`);
+    let keys = alimentos.keysThatMatch(`..${d4_i3.value}.`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'banana'){
@@ -588,7 +588,7 @@ function getd4i3(){
 }
 function getd4i5(){
     d4_i3 = document.getElementById("dica4-item3");
-    let keys = animais.keysThatMatch(`..${d4_i5.value}.`);
+    let keys = alimentos.keysThatMatch(`..${d4_i5.value}.`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'banana'){
@@ -603,7 +603,7 @@ function getd4i5(){
 }
 function getd4i6(){
     d4_i3 = document.getElementById("dica4-item3");
-    let keys = animais.keysThatMatch(`..${d4_i6_d8_i2.value}.`);
+    let keys = alimentos.keysThatMatch(`..${d4_i6_d8_i2.value}.`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'banana'){
@@ -619,7 +619,7 @@ function getd4i6(){
 // Palavra5
 function getd5i1(){
     d5_i1 = document.getElementById("dica5-item1");
-    let keys = animais.keysThatMatch(`${d5_i1.value}.....`);
+    let keys = alimentos.keysThatMatch(`${d5_i1.value}.....`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'feijao'){
@@ -634,7 +634,7 @@ function getd5i1(){
 }
 function getd5i3(){
     d5_i1 = document.getElementById("dica5-item1");
-    let keys = animais.keysThatMatch(`${d5_i3.value}.....`);
+    let keys = alimentos.keysThatMatch(`${d5_i3.value}.....`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'feijao'){
@@ -649,7 +649,7 @@ function getd5i3(){
 }
 function getd5i4(){
     d5_i4 = document.getElementById("dica5-item4");
-    let keys = animais.keysThatMatch(`...${d5_i4.value}..`);
+    let keys = alimentos.keysThatMatch(`...${d5_i4.value}..`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'feijao'){
@@ -664,7 +664,7 @@ function getd5i4(){
 }
 function getd5i5(){
     d5_i5 = document.getElementById("dica5-item5");
-    let keys = animais.keysThatMatch(`....${d5_i5.value}.`);
+    let keys = alimentos.keysThatMatch(`....${d5_i5.value}.`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'feijao'){
@@ -679,7 +679,7 @@ function getd5i5(){
 }
 function getd5i6(){
     d5_i1 = document.getElementById("dica5-item1");
-    let keys = animais.keysThatMatch(`${d5_i6_d6_i1.value}.....`);
+    let keys = alimentos.keysThatMatch(`${d5_i6_d6_i1.value}.....`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'feijao'){
@@ -696,7 +696,7 @@ function getd5i6(){
 // Palavra6
 function getd6i2(){
     d6_i1 = document.getElementById("dica6-item1");
-    let keys = animais.keysThatMatch(`${d6_i2.value}....`);
+    let keys = alimentos.keysThatMatch(`${d6_i2.value}....`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'ovo'){
@@ -711,7 +711,7 @@ function getd6i2(){
 }
 function getd6i3(){
     d6_i2_d5_i6 = document.getElementById("dica6-item2-dica5-item6");
-    let keys = animais.keysThatMatch(`.${d6_i3_d7_i6.value}...`);
+    let keys = alimentos.keysThatMatch(`.${d6_i3_d7_i6.value}...`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'ovo'){
@@ -727,7 +727,7 @@ function getd6i3(){
 // Palavra7
 function getd7i1(){
     d7_i2 = document.getElementById("dica7-item2");
-    let keys = animais.keysThatMatch(`.${d7_i1.value}......`);
+    let keys = alimentos.keysThatMatch(`.${d7_i1.value}......`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'queijo'){
@@ -742,7 +742,7 @@ function getd7i1(){
 }
 function getd7i2(){
     d7_i2 = document.getElementById("dica7-item2");
-    let keys = animais.keysThatMatch(`.${d7_i2.value}......`);
+    let keys = alimentos.keysThatMatch(`.${d7_i2.value}......`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'queijo'){
@@ -757,7 +757,7 @@ function getd7i2(){
 }
 function getd7i3(){
     d7_i3 = document.getElementById("dica7-item3");
-    let keys = animais.keysThatMatch(`..${d7_i3.value}.....`);
+    let keys = alimentos.keysThatMatch(`..${d7_i3.value}.....`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'queijo'){
@@ -772,7 +772,7 @@ function getd7i3(){
 }
 function getd7i4(){
     d7_i4 = document.getElementById("dica7-item4");
-    let keys = animais.keysThatMatch(`...${d7_i4.value}....`);
+    let keys = alimentos.keysThatMatch(`...${d7_i4.value}....`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'queijo'){
@@ -787,7 +787,7 @@ function getd7i4(){
 }
 function getd7i5(){
     d7_i6 = document.getElementById("dica7-item6");
-    let keys = animais.keysThatMatch(`.....${d7_i5.value}..`);
+    let keys = alimentos.keysThatMatch(`.....${d7_i5.value}..`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'queijo'){
@@ -804,7 +804,7 @@ function getd7i5(){
 //Palavra8
 function getd8i1(){
     d8_i1_d5_i3 = document.getElementById("dica8-item1-dica5-item3");
-    let keys = animais.keysThatMatch(`${d8_i1.value}.....`);
+    let keys = alimentos.keysThatMatch(`${d8_i1.value}.....`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'maca'){
@@ -819,7 +819,7 @@ function getd8i1(){
 }
 function getd8i3(){
     d8_i2 = document.getElementById("dica8-item2");
-    let keys = animais.keysThatMatch(`.${d8_i3.value}....`);
+    let keys = alimentos.keysThatMatch(`.${d8_i3.value}....`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'maca'){
@@ -834,7 +834,7 @@ function getd8i3(){
 }
 function getd8i4(){
     d8_i2 = document.getElementById("dica8-item2");
-    let keys = animais.keysThatMatch(`.${d8_i4.value}....`);
+    let keys = alimentos.keysThatMatch(`.${d8_i4.value}....`);
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'maca'){
@@ -973,7 +973,7 @@ function resultado() {
     // Checagem palavra1
     let dica1 = document.getElementsByClassName("dica1");
     let p1 = "  MOQUECA";
-    if (animais.get(palavra1) != 1){
+    if (alimentos.get(palavra1) != 1){
         for (let i = 0; i<dica1.length; i++){
             dica1[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -984,7 +984,7 @@ function resultado() {
     // Checagem palavra2
     let dica2 = document.getElementsByClassName("dica2");
     let p2 = "SORVETE";
-    if (animais.get(palavra2) != 2){
+    if (alimentos.get(palavra2) != 2){
         for (let i = 0; i<dica2.length; i++){
             dica2[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -995,7 +995,7 @@ function resultado() {
     // Checagem palavra3
     let dica3 = document.getElementsByClassName("dica3");
     let p3 = "SUSHI";
-    if (animais.get(palavra3) != 3){
+    if (alimentos.get(palavra3) != 3){
         for (let i = 0; i<dica3.length; i++){
             dica3[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -1006,7 +1006,7 @@ function resultado() {
     // Checagem palavra4
     let dica4 = document.getElementsByClassName("dica4");
     let p4 = "BANANA";
-    if (animais.get(palavra4) != 4){
+    if (alimentos.get(palavra4) != 4){
         for (let i = 0; i<dica4.length; i++){
             dica4[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -1017,7 +1017,7 @@ function resultado() {
     // Checagem palavra5
     let dica5 = document.getElementsByClassName("dica5");
     let p5 = "FEIJÃO";
-    if (animais.get(palavra5) != 5){
+    if (alimentos.get(palavra5) != 5){
         for (let i = 0; i<dica5.length; i++){
             dica5[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -1029,7 +1029,7 @@ function resultado() {
     // Checagem palavra6
     let dica6 = document.getElementsByClassName("dica6");
     let p6 = "OVO";
-    if (animais.get(palavra6) != 6){
+    if (alimentos.get(palavra6) != 6){
         for (let i = 0; i<dica6.length; i++){
             dica6[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -1041,7 +1041,7 @@ function resultado() {
     // Checagem palavra7
     let dica7 = document.getElementsByClassName("dica7");
     let p7 = "QUEIJO";
-    if (animais.get(palavra7) != 7){
+    if (alimentos.get(palavra7) != 7){
         for (let i = 0; i<dica7.length; i++){
             dica7[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -1053,7 +1053,7 @@ function resultado() {
     // Checagem palavra8
     let dica8 = document.getElementsByClassName("dica8");
     let p8 = "MAÇÃ";
-    if (animais.get(palavra8) != 8){
+    if (alimentos.get(palavra8) != 8){
         for (let i = 0; i<dica8.length; i++){
             dica8[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
