@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,10 @@
 <body>
     <header>
         <h1>Transportes</h1>
+        <audio id="audio" src="../music/musica.mp3"></audio>
+        <button class="music" onclick="tocar()">
+            <img id="som" src="../images/mute.png" alt="">
+        </button>
     </header>
     <div>
         <!-- Blocos vazios apenas com o Titulo N2 e N3 -->
@@ -49,5 +53,6 @@
     </div>
 
     <script src="../scripts/transportes.js" ></script>
+    <script src="../scripts/som.js"></script>
 </body>
 </html>
