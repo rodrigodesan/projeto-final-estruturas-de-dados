@@ -20,4 +20,4 @@ https://rodrigodesan.github.io/projeto-final-estruturas-de-dados/index.html
 
 - As dicas foram armazenadas na fila utilizando a função `add(x)`.
 
-- Para que as dicas fossem exibidas na ordem correta elas foram retiradas utilizando a função `remove(x)`.
+- Para que as dicas fossem exibidas na ordem correta elas foram retiradas utilizando a função `remove()`.
