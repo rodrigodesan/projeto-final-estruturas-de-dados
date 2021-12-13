@@ -144,7 +144,10 @@ class Trie{
     }
 
     keysThatMatch(pat){
-        var pater = pat.normalize('NFD').replace(/[\u0300-\u036f]/g,"").toLowerCase()
+        var pater = pat
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g,"")
+        .toLowerCase()
         let q = new ArrayQueue();
         this.collectMatch(this.root,"",pater,q);
         return q.a;
