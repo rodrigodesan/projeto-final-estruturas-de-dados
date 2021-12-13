@@ -1,3 +1,4 @@
+// Implementação Basica da TAD ArrayQueue
 class ArrayQueue {
     constructor(){
         this.a = new Array(1)
@@ -34,6 +35,11 @@ class ArrayQueue {
         this.j = 0;
     }
 }
+
+// Implementação de uma Trie de 26 caracteres. Foi feita uma pequena alteração nos métodos para que, 
+// ao receber chaves com caracteres especiais ou letras maiúsculas, sejam totalmente convertidos para
+// caracteres normais e letras minúsculas, isso para caber no alfabeto da Trie, evitando assim um 
+// desperdício extra de espaço.
 
 const R = 26
 class TrieNode{
@@ -191,6 +197,9 @@ class Trie{
 
 }
 
+// Criação da Trie com as palavras do determinado modo, com o valor associado sendo o número da dica
+// a que cada chave se refere.
+
 let transportes = new Trie()
 
 transportes.put("Carro", 1);
@@ -201,12 +210,17 @@ transportes.put("Metrô", 5);
 transportes.put("Avião", 6);
 
 
+// Adição das dicas em um ArrayQueue que será usado para fazer a exibição na tela de todos as
+// dicas na ordem em que foram adicionadas
+
 let dicas = ["Transporte individual de 4 rodas", "Conhecido por Busu", "Transporte usado para altas cargas","Popurlamente conhecido por Camelo", "Separado por vagões", "Utilizado para sobrevoar cidades e paises"]
 let dicasExibir = new ArrayQueue()
 
 for (let i of dicas) {
     dicasExibir.add(i)
 }
+
+// Definição das variáveis nas quais serão usados cada um dos campos onde as letras serão digitadas
 
 let d2_i1;
 let d1_i1_d3_i1;
@@ -254,6 +268,14 @@ let palavra3;
 let palavra4;
 let palavra5;
 let palavra6;
+
+// Série de funções que serão cada uma chamada em um dos inputs das letras. Basicamente, essas funções
+// pegam a letra digitada no determinado input e utilizam o método keysThatMatch de Tries na posição
+// em que aquela letra fica na palavra. Depois disso testa se alguma das palavras retornadas no método
+// são a palavra daquela posição e, se alguma dessas checagens for verdadeira, deixa o determinado input
+// verde. Se não, o deixa vermelho. Essa função também desabilita o botão de finalizar e os inputs.
+
+
 
 // Palavra 1
 
@@ -797,6 +819,9 @@ function getd6i4() {
     }
 }
 
+// Exibição das dicas na tela, criando tags li que recebem como texto os elementos extraídos
+// a partir do método remove de ArrayQueue, ou seja, retornando na ordem em que foram adicionados
+
 let pDicas = document.getElementById("dicas");
 var li;
 var dica;
@@ -806,6 +831,14 @@ for (let i = 0; i < dicas.length; i++){
     li.innerText = `${dica}`;
     pDicas.appendChild(li);
 }
+
+
+// Função utilizada no botão resultado. Ela pega o que foi escrito em todos os inputs e com eles monta as palavras.
+// Despois, testa, com o método get de Trie, se a palavra formada equivale ao valor associado que deveria, deixando os
+// inputs daquela palavra vermelhors casa essa equivalência seja falsa. Além disso, essa função preenche todas as palavras
+// com o mesmo padrão, tanto os espaços já preenchidos quanto os vazios. E também testa se todas as palavras preenchidas
+// estão corretas, exibindo uma mensagem em caso positivo e outra em caso negativo.
+
 
 function resultado() {
      d2_i1 = document.getElementById("dica2-item1");
