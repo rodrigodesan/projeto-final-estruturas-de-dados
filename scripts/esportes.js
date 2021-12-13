@@ -1,3 +1,4 @@
+// Implementação Basica da TAD ArrayQueue
 class ArrayQueue {
   constructor() {
     this.a = new Array(1);
@@ -35,6 +36,10 @@ class ArrayQueue {
   }
 }
 
+// Implementação de uma Trie de 26 caracteres. Foi feita uma pequena alteração nos métodos para que,
+// ao receber chaves com caracteres especiais ou letras maiúsculas, sejam totalmente convertidos para
+// caracteres normais e letras minúsculas, isso para caber no alfabeto da Trie, evitando assim um
+// desperdício extra de espaço.
 const R = 26;
 class TrieNode {
   constructor() {
@@ -208,6 +213,9 @@ class Trie {
   }
 }
 
+// Criação da Trie com as palavras do determinado modo, com o valor associado sendo o número da dica
+// a que cada chave se refere.
+
 let esportes = new Trie();
 
 esportes.put('Futsal', 1);
@@ -219,6 +227,8 @@ esportes.put('Surf', 6);
 esportes.put('Tênis', 7);
 esportes.put('Natação', 8);
 
+// Adição das dicas em um ArrayQueue que será usado para fazer a exibição na tela de todos as
+// dicas na ordem em que foram adicionadas
 let dicas = [
   'Semelhante ao futebol, jogado em uma quadra.',
   'Times devem fazer a bola atravesar a baliza adversária, usando somente o pés.',
@@ -234,6 +244,7 @@ for (let i of dicas) {
   dicasExibir.add(i);
 }
 
+// Definição das variáveis nas quais serão usados cada um dos campos onde as letras serão digitadas
 let palavra1;
 let palavra2;
 let palavra3;
@@ -295,6 +306,12 @@ let d8_i3;
 let d8_i5;
 let d8_i6;
 let d8_i7;
+
+// Série de funções que serão cada uma chamada em um dos inputs das letras. Basicamente, essas funções
+// pegam a letra digitada no determinado input e utilizam o método keysThatMatch de Tries na posição
+// em que aquela letra fica na palavra. Depois disso testa se alguma das palavras retornadas no método
+// são a palavra daquela posição e, se alguma dessas checagens for verdadeira, deixa o determinado input
+// verde. Se não, o deixa vermelho. Essa função também desabilita o botão de finalizar e os inputs.
 
 // Palavra 1
 function getd1i1() {
@@ -867,6 +884,8 @@ function getd8i7() {
   }
 }
 
+// Exibição das dicas na tela, criando tags li que recebem como texto os elementos extraídos
+// a partir do método remove de ArrayQueue, ou seja, retornando na ordem em que foram adicionados
 let pDicas = document.getElementById('dicas');
 var li;
 var dica;
@@ -876,6 +895,12 @@ for (let i = 0; i < dicas.length; i++) {
   li.innerText = `${dica}`;
   pDicas.appendChild(li);
 }
+
+// Função utilizada no botão resultado. Ela pega o que foi escrito em todos os inputs e com eles monta as palavras.
+// Despois, testa, com o método get de Trie, se a palavra formada equivale ao valor associado que deveria, deixando os
+// inputs daquela palavra vermelhors casa essa equivalência seja falsa. Além disso, essa função preenche todas as palavras
+// com o mesmo padrão, tanto os espaços já preenchidos quanto os vazios. E também testa se todas as palavras preenchidas
+// estão corretas, exibindo uma mensagem em caso positivo e outra em caso negativo.
 
 function resultado() {
   d1_i1_d2_i1 = document.getElementById('dica1-item1-dica2-item1');
@@ -1101,8 +1126,17 @@ function resultado() {
     res.innerText =
       'Não foi dessa vez! Aperte o botão abaixo para jogar novamente.';
   }
+
+  // Desabilitando botão após o primeiro click
+  document.getElementById('finalizar').disabled = true;
+
+  let inputs = document.getElementsByClassName('usable');
+  for (let i of inputs) {
+    i.disabled = true;
+  }
 }
 
+// Função que recarrega a página
 function jogarNovamente() {
   document.location.reload(true);
 }
