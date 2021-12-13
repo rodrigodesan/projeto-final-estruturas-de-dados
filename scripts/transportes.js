@@ -858,7 +858,7 @@ function resultado() {
 
      palavra5 = d5_i1.value + d4_i7_d5_i2.value + d5_i3.value + d5_i4.value + d5_i5.value;
 
-     palavra6 = d6_i1.value + d6_i2.value + d6_i3.value  + d6_i3.value;
+     palavra6 = d6_i1.value + d6_i2.value + d6_i3.value  + d6_i4.value + d6_i5_d3_i8.value;
 
      let correto = true;
 
