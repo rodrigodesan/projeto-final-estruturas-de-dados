@@ -67,3 +67,13 @@ button {
     font-family: 'PressStart2P-Regular', monospace;
     margin-bottom: 5px;
 }
+.music {
+    background-color: ghostwhite;
+    height: 50px;
+    width: 100px;
+ }
+ 
+ .music > #som{
+     width: 45px;
+     
+ }
