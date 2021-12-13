@@ -237,7 +237,7 @@ let dicas = [
   'Deve-se executar manobras em uma prancha de 4 rodas.',
   'Manter-se em equilíbrio numa prancha em uma zona de rebentação de ondas',
   'Usando uma raquete deve-se fazer a bola cair na área adversária.',
-  'Em um corpo de áqua os competidores participam de uma corrida.',
+  'Em um corpo de água os competidores participam de uma corrida.',
 ];
 let dicasExibir = new ArrayQueue();
 for (let i of dicas) {
