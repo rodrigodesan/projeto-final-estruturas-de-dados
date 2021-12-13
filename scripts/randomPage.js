@@ -4,7 +4,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-let randomNum = getRandomInt(0, 6);
+let randomNum = getRandomInt(0, 4);
 
 function setPage() {
   switch (randomNum) {
@@ -12,23 +12,17 @@ function setPage() {
       window.location.href = "../pages/animais.html";
       break;
     case 1:
-      window.location.href = "../pages/profissoes.html";
+      window.location.href = "../pages/objetos.html";
       break;
     case 2:
-    window.location.href = "../pages/objetos.html";
+    window.location.href = "../pages/esportes.html";
     break;
     case 3:
-      window.location.href = "../pages/esportes.html";
-      break;
-    case 4:
-      window.location.href = "../pages/cores.html";
-      break;
-    case 5:
       window.location.href = "../pages/alimentos.html";
       break;
-    case 6:
+    case 4:
       window.location.href = "../pages/transportes.html";
-      break; 
+      break;
     default:
       break;
   }
