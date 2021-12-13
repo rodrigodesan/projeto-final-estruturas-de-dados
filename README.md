@@ -4,6 +4,8 @@ Projeto final da disciplina de Estruturas de Dados
 
 https://rodrigodesan.github.io/projeto-final-estruturas-de-dados/index.html
 
+Vídeo de explicação do código: https://www.youtube.com/watch?v=6hQ5umdviws
+
 ---
 
 ## Estruturas utilizadas
