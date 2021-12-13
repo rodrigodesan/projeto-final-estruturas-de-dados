@@ -1,3 +1,4 @@
+// Implementação Basica da TAD ArrayQueue
 class ArrayQueue {
     constructor(){
         this.a = new Array(1)
@@ -35,6 +36,10 @@ class ArrayQueue {
     }
 }
 
+// Implementação de uma Trie de 26 caracteres. Foi feita uma pequena alteração nos métodos para que, 
+// ao receber chaves com caracteres especiais ou letras maiúsculas, sejam totalmente convertidos para
+// caracteres normais e letras minúsculas, isso para caber no alfabeto da Trie, evitando assim um 
+// desperdício extra de espaço.
 const R = 26
 class TrieNode{
     constructor(){
@@ -191,6 +196,8 @@ class Trie{
 
 }
 
+// Criação da Trie com as palavras do determinado modo, com o valor associado sendo o número da dica
+// a que cada chave se refere.
 let objetos = new Trie();
 
 objetos.put("Anel",1);
@@ -201,13 +208,15 @@ objetos.put("Vela",5);
 objetos.put("Alfinete",6);
 objetos.put("Escova",7);
 
+// Adição das dicas em um ArrayQueue que será usado para fazer a exibição na tela de todos as
+// dicas na ordem em que foram adicionadas
 let dicas = ["Argola que se usa no dedo","Armazena encomendas em seu interior","Conjunto de folhas ordenadas e encadernadas","Pequeno cubo com faces enumeradas de um a seis", "Peça de cera com pavio interior que serve para iluminar","Peça metálica, muito pequena e pontuda, para prender tecidos", "Utensílio com pêlos para pentear cabelos"]
 let dicasExibir = new ArrayQueue();
 for (let i of dicas){
     dicasExibir.add(i);
 }
 
-
+// Definição das variáveis nas quais serão usados cada um dos campos onde as letras serão digitadas
 let d4_i1;
 let d4_i2;
 let d6_i1;
@@ -245,6 +254,12 @@ let palavra4;
 let palavra5;
 let palavra6;
 let palavra7;
+
+// Série de funções que serão cada uma chamada em um dos inputs das letras. Basicamente, essas funções
+// pegam a letra digitada no determinado input e utilizam o método keysThatMatch de Tries na posição
+// em que aquela letra fica na palavra. Depois disso testa se alguma das palavras retornadas no método
+// são a palavra daquela posição e, se alguma dessas checagens for verdadeira, deixa o determinado input
+// verde. Se não, o deixa vermelho. Essa função também desabilita o botão de finalizar e os inputs.
 
 // Palavra 1
 function getd1i1(){
@@ -710,6 +725,8 @@ function getd7i5(){
     }
 }
 
+// Exibição das dicas na tela, criando tags li que recebem como texto os elementos extraídos
+// a partir do método remove de ArrayQueue, ou seja, retornando na ordem em que foram adicionados
 let pDicas = document.getElementById("dicas");
 var li;
 var dica;
@@ -720,6 +737,11 @@ for (let i = 0; i < dicas.length; i++){
     pDicas.appendChild(li);
 }
 
+// Função utilizada no botão resultado. Ela pega o que foi escrito em todos os inputs e com eles monta as palavras.
+// Despois, testa, com o método get de Trie, se a palavra formada equivale ao valor associado que deveria, deixando os
+// inputs daquela palavra vermelhors casa essa equivalência seja falsa. Além disso, essa função preenche todas as palavras
+// com o mesmo padrão, tanto os espaços já preenchidos quanto os vazios. E também testa se todas as palavras preenchidas
+// estão corretas, exibindo uma mensagem em caso positivo e outra em caso negativo.
 function resultado(){
     d4_i1 = document.getElementById("dica4-item1");
     d4_i2 = document.getElementById("dica4-item2");
@@ -857,14 +879,21 @@ function resultado(){
     res.style.marginTop = "10px";
     res.style.marginBottom = "20px";
     if (correto){
-        res.style.color = "rgba(190, 255, 190, 0.801)";
-        res.innerText = "PARABÉNS, VOCÊ ACERTOU TUDO! Aperte o botão abaixo para jogar novamente."
+        res.innerText = "PARABÉNS, VOCÊ ACERTOU TUDO! Aperte o botão abaixo para jogar novamente.";
     } else{
-        res.style.color = "rgba(255, 158, 158, 0.746)";
-        res.innerText = "Não foi dessa vez! Aperte o botão abaixo para jogar novamente."
+        res.innerText = "Não foi dessa vez! Aperte o botão abaixo para jogar novamente.";
+    }
+
+    // Desabilitando botão após o primeiro click
+    document.getElementById("finalizar").disabled = true;
+
+    let inputs = document.getElementsByClassName("usable");
+    for (let i of inputs){
+        i.disabled = true;
     }
 }
 
+// Função que recarrega a página
 function jogarNovamente(){
     document.location.reload(true);
 }
