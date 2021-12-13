@@ -270,7 +270,7 @@ let palavra8;
 // pegam a letra digitada no determinado input e utilizam o método keysThatMatch de Tries na posição
 // em que aquela letra fica na palavra. Depois disso testa se alguma das palavras retornadas no método
 // são a palavra daquela posição e, se alguma dessas checagens for verdadeira, deixa o determinado input
-// verde. Se não, o deixa vermelho.
+// verde. Se não, o deixa vermelho. Essa função também desabilita o botão de finalizar e os inputs.
 
 // Palavra 1
 function getd1i1(){
@@ -1013,12 +1013,21 @@ function resultado(){
     res.style.marginTop = "10px";
     res.style.marginBottom = "20px";
     if (correto){
-        res.innerText = "PARABÉNS, VOCÊ ACERTOU TUDO! Aperte o botão abaixo para jogar novamente."
+        res.innerText = "PARABÉNS, VOCÊ ACERTOU TUDO! Aperte o botão abaixo para jogar novamente.";
     } else{
-        res.innerText = "Não foi dessa vez! Aperte o botão abaixo para jogar novamente."
+        res.innerText = "Não foi dessa vez! Aperte o botão abaixo para jogar novamente.";
+    }
+
+    // Desabilitando botão após o primeiro click
+    document.getElementById("finalizar").disabled = true;
+
+    let inputs = document.getElementsByClassName("usable");
+    for (let i of inputs){
+        i.disabled = true;
     }
 }
 
+// Função que recarrega a página
 function jogarNovamente(){
     document.location.reload(true);
 }
