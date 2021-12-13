@@ -231,7 +231,7 @@ esportes.put('Natação', 8);
 // dicas na ordem em que foram adicionadas
 let dicas = [
   'Semelhante ao futebol, jogado em uma quadra.',
-  'Times devem fazer a bola atravesar a baliza adversária, usando somente o pés.',
+  'Times devem fazer a bola atravessar a baliza adversária, usando somente o pés.',
   'Esporte de origem japonesa em que o atleta deve derrubar o adversário.',
   'Arte marcial de origem japonesa, onde o atleta deve acertar golpes no adversário.',
   'Deve-se executar manobras em uma prancha de 4 rodas.',
