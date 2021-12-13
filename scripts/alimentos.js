@@ -1,3 +1,4 @@
+//Implementação básica da TAD ArrayQueue
 class ArrayQueue {
     constructor(){
         this.a = new Array(1)
@@ -34,7 +35,7 @@ class ArrayQueue {
         this.j = 0;
     }
 }
-
+// Implementação da Trie
 const R = 26
 class TrieNode{
     constructor(){
@@ -194,6 +195,9 @@ class Trie{
 
 }
 
+//Criação e preenchimento da Trie que contém as palavras usadas nas palavras cruzadas
+// Inclusão das dicas usadas para identificar as palavras 
+// Identificação das letras das palavras usando a dica (d) para diferenciar as palavras e item (i) para identificar a letra
 let alimentos = new Trie();
 
 alimentos.put("Moqueca",1);
@@ -281,7 +285,7 @@ let d8_i1;
 let d8_i3;
 let d8_i4;
 
-
+//Funções para recolher a letra inserida pelo jogador e identificar se ela pertence à palavra de controle (palavra correta)
 
 // Palavra 1
 function getd1i1(){
@@ -865,6 +869,8 @@ for (let i = 0; i < dicas.length; i++){
     pDicas.appendChild(li);
 }
 
+//Função para conferir se o resultado está correto, vai ser usada também quando usar o botão finalizar na interface da palavra cruzada para autocompletar o jogo
+
 function resultado() {
     // palavra 1
     d1_i1 = document.getElementById('dica1-item1');
@@ -979,10 +985,13 @@ function resultado() {
       d8_i3.value +
       d8_i4.value;
 
+    let correto = true;
+
     // Checagem palavra1
     let dica1 = document.getElementsByClassName("dica1");
     let p1 = "MOQUECA";
     if (alimentos.get(palavra1) != 1){
+        correto = false;
         for (let i = 0; i<dica1.length; i++){
             dica1[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -994,6 +1003,7 @@ function resultado() {
     let dica2 = document.getElementsByClassName("dica2");
     let p2 = "SORVETE";
     if (alimentos.get(palavra2) != 2){
+        correto = false;
         for (let i = 0; i<dica2.length; i++){
             dica2[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -1005,6 +1015,7 @@ function resultado() {
     let dica3 = document.getElementsByClassName("dica3");
     let p3 = "SUSHI";
     if (alimentos.get(palavra3) != 3){
+        correto = false;
         for (let i = 0; i<dica3.length; i++){
             dica3[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -1016,6 +1027,7 @@ function resultado() {
     let dica4 = document.getElementsByClassName("dica4");
     let p4 = "BANANA";
     if (alimentos.get(palavra4) != 4){
+        correto = false;
         for (let i = 0; i<dica4.length; i++){
             dica4[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -1027,6 +1039,7 @@ function resultado() {
     let dica5 = document.getElementsByClassName("dica5");
     let p5 = "FEIJÃO";
     if (alimentos.get(palavra5) != 5){
+        correto = false;
         for (let i = 0; i<dica5.length; i++){
             dica5[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -1039,6 +1052,7 @@ function resultado() {
     let dica6 = document.getElementsByClassName("dica6");
     let p6 = "OVO";
     if (alimentos.get(palavra6) != 6){
+        correto = false;
         for (let i = 0; i<dica6.length; i++){
             dica6[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -1051,6 +1065,7 @@ function resultado() {
     let dica7 = document.getElementsByClassName("dica7");
     let p7 = "QUEIJO";
     if (alimentos.get(palavra7) != 7){
+        correto = false;
         for (let i = 0; i<dica7.length; i++){
             dica7[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -1063,6 +1078,7 @@ function resultado() {
     let dica8 = document.getElementsByClassName("dica8");
     let p8 = "MAÇÃ";
     if (alimentos.get(palavra8) != 8){
+        correto = false;
         for (let i = 0; i<dica8.length; i++){
             dica8[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -1070,7 +1086,27 @@ function resultado() {
     for (let i=0;i<p8.length;i++){
         dica8[i].value = p8[i];
     }
+    // Mensagem de resultado
+    let res = document.getElementById("resultado");
+    res.style.marginTop = "10px";
+    res.style.marginBottom = "20px";
+    if (correto){
+        res.innerText = "PARABÉNS, VOCÊ ACERTOU TUDO! Aperte o botão abaixo para jogar novamente.";
+    } else{
+        res.innerText = "Não foi dessa vez! Aperte o botão abaixo para jogar novamente.";
+    }
+
+    // Desabilitando botão após o primeiro click
+    document.getElementById("finalizar").disabled = true;
+
+    let inputs = document.getElementsByClassName("usable");
+    for (let i of inputs){
+        i.disabled = true;
+    }
 }
+
+
+//Função para reiniciar o jogo
 
 function jogarNovamente(){
     document.location.reload(true);

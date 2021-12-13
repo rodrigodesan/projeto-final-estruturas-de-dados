@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palavras Cruzadas</title>
+    <title>Palavras Cruzadas - Alimentos</title>
     <link rel="stylesheet" href="../style/alimentos.css">
     <link rel="shortcut icon" href="../images/alimentos.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <h1>Alimentos</h1>
+        <audio id="audio" src="../music/musica-animais.mp3"></audio>
+        <button class="music" onclick="tocar()">
+            <img id="som" src="../images/mute.png" alt = "">
+        </button>
     </header>
     <div>
         <!-- Linha 1 -->
@@ -46,7 +50,7 @@
         <p style="font-size: 18px;">Dicas</p>
         
         <div id="dicas" style="margin-bottom: 20px;"></div>
-        <button onclick="resultado()" > FINALIZAR</button>
+        <button id="finalizar" onclick="resultado()" > FINALIZAR</button>
         <button><a href="jogar.html" style="text-decoration: none; color:black">TROCAR MODO</a></button><br>
         <div id="resultado"></div><br>
         <button onclick="jogarNovamente()"> JOGAR NOVAMENTE </button><br>
@@ -54,5 +58,6 @@
     </div>
 
 <script src="../scripts/alimentos.js" ></script>
+<script src="../scripts/som.js" ></script>
 </body>
 </html>
