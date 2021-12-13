@@ -1,4 +1,9 @@
-@charset 'UTF-8';
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'PressStart2P-Regular';
+    src: url('../font/PressStart2P-Regular.ttf');
+}
 
 body {
     background-color: yellow;
@@ -39,5 +44,25 @@ div {
 
 li {
     list-style-type: decimal;
+    font-size: 18px;
     
+}
+
+#resultado {
+    font-family: 'PressStart2P-Regular';
+    max-width: 600px;
+}
+
+button {
+    font-size: 100%;
+    font-family: 'PressStart2P-Regular';
+    height: 60px;
+    width: 225px;
+    border-radius: 20px;
+    background-color: #eab1b1;
+    border-style: solid;
+    border-color: black;
+    cursor: pointer;
+    font-family: 'PressStart2P-Regular', monospace;
+    margin-bottom: 5px;
 }

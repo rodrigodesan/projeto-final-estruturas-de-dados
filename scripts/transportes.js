@@ -860,11 +860,14 @@ function resultado() {
 
      palavra6 = d6_i1.value + d6_i2.value + d6_i3.value  + d6_i3.value;
 
+     let correto = true;
+
 
      //Check Palavra 1
      let dica1 = document.getElementsByClassName("dica1");
      let p1 = "CARRO";
      if (transportes.get(palavra1) != 1){
+         correto = false;
          for (let i = 0; i < dica1.length; i++){
              dica1[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
          }
@@ -877,6 +880,7 @@ function resultado() {
      let dica2 = document.getElementsByClassName("dica2");
      let p2 = "ÔNIBUS";
      if (transportes.get(palavra2) != 2){
+         correto = false;
          for (let i = 0; i<dica2.length; i++){
              dica2[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
          }
@@ -890,6 +894,7 @@ function resultado() {
      let dica3 = document.getElementsByClassName("dica3");
      let p3 = "CAMINHÃO";
      if (transportes.get(palavra3) != 3){
+         correto = false;
          for (let i = 0; i<dica3.length; i++){
              dica3[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
          }
@@ -903,6 +908,7 @@ function resultado() {
      let dica4 = document.getElementsByClassName("dica4");
      let p4 = "BICICLETA";
      if (transportes.get(palavra4) != 4){
+         correto = false;
          for (let i = 0; i < dica4.length; i++){
              dica4[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
          }
@@ -916,6 +922,7 @@ function resultado() {
      let dica5 = document.getElementsByClassName("dica5");
      let p5 = "METRÔ";
      if (transportes.get(palavra5) != 5){
+         correto = false;
          for (let i = 0; i < dica5.length; i++){
              dica5[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
          }
@@ -929,6 +936,7 @@ function resultado() {
      let dica6 = document.getElementsByClassName("dica6");
      let p6 = "AVIÃO";
      if (transportes.get(palavra6) != 6){
+         correto = false;
          for (let i = 0; i < dica6.length; i++){
              dica6[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
          }
@@ -936,6 +944,18 @@ function resultado() {
      for (let i = 0;i < p6.length;i++){
          dica6[i].value = p6[i];
      }
+
+    // Mensagem de resultado
+    let res = document.getElementById("resultado");
+    res.style.marginTop = "10px";
+    res.style.marginBottom = "20px";
+    if (correto){
+        res.style.color = "black";
+        res.innerText = "PARABÉNS, VOCÊ ACERTOU TUDO! Aperte o botão abaixo para jogar novamente."
+    } else{
+        res.style.color = "black";
+        res.innerText = "Não foi dessa vez! Aperte o botão abaixo para jogar novamente."
+    }
 
 }
 
