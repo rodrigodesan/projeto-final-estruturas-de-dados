@@ -286,11 +286,7 @@ let d8_i4;
 // Palavra 1
 function getd1i1(){
     d1_i1 = document.getElementById("dica1-item1");
-<<<<<<< Updated upstream
-    let keys = alimentos.keysThatMatch(`${d1_i1.value}...`);
-=======
     let keys = alimentos.keysThatMatch(`${d1_i1.value}......`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'moqueca'){
@@ -304,14 +300,9 @@ function getd1i1(){
     }
 }
 function getd1i2(){
-<<<<<<< Updated upstream
-    d1_i2_d7_i1 = document.getElementById("dica1-item2-dica7-item1");
-    let keys = alimentos.keysThatMatch(`.${d1_i2_d2_i2.value}..`);
-=======
     d1_i2_d2_i2 = document.getElementById("dica1-item2-dica2-item2");
     console.log(alimentos)    
     let keys = alimentos.keysThatMatch(`.${d1_i2_d2_i2.value}.....`);
->>>>>>> Stashed changes
     let pertence = false
     console.log(keys)
     for (let i = 0; i<keys.length; i++ ){
@@ -327,11 +318,7 @@ function getd1i2(){
 }
 function getd1i3(){
     d1_i3 = document.getElementById("dica1-item3");
-<<<<<<< Updated upstream
-    let keys = alimentos.keysThatMatch(`..${d1_i3.value}.`);
-=======
     let keys = alimentos.keysThatMatch(`..${d1_i3.value}....`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'moqueca'){
@@ -345,13 +332,8 @@ function getd1i3(){
     }
 }
 function getd1i4(){
-<<<<<<< Updated upstream
-    d1_i4 = document.getElementById("dica1-item4");
-    let keys = alimentos.keysThatMatch(`...${d1_i4_d3_i2.value}`);
-=======
     d1_i4_d3_i2 = document.getElementById("dica1-item4-dica3-item2");
     let keys = alimentos.keysThatMatch(`...${d1_i4_d3_i2.value}...`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'moqueca'){
@@ -365,13 +347,8 @@ function getd1i4(){
     }
 }
 function getd1i5(){
-<<<<<<< Updated upstream
-    d1_i2_d7_i1 = document.getElementById("dica1-item2-dica7-item1");
-    let keys = alimentos.keysThatMatch(`.${d1_i5.value}..`);
-=======
     d1_i5 = document.getElementById("dica1-item5");
     let keys = alimentos.keysThatMatch(`....${d1_i5.value}..`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'moqueca'){
@@ -385,13 +362,8 @@ function getd1i5(){
     }
 }
 function getd1i6(){
-<<<<<<< Updated upstream
-    d1_i2_d7_i1 = document.getElementById("dica1-item2-dica7-item1");
-    let keys = alimentos.keysThatMatch(`.${d1_i6.value}..`);
-=======
     d1_i6 = document.getElementById("dica1-item6");
     let keys = alimentos.keysThatMatch(`.....${d1_i6.value}.`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'moqueca'){
@@ -405,13 +377,8 @@ function getd1i6(){
     }
 }
 function getd1i7(){
-<<<<<<< Updated upstream
-    d1_i2_d7_i1 = document.getElementById("dica1-item2-dica7-item1");
-    let keys = alimentos.keysThatMatch(`.${d1_i7_d4_i4.value}..`);
-=======
     d1_i7_d4_i4 = document.getElementById("dica1-item7-dica4-item4");
     let keys = alimentos.keysThatMatch(`......${d1_i7_d4_i4.value}`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'moqueca'){
@@ -428,11 +395,7 @@ function getd1i7(){
 // Palavra2 
 function getd2i1(){
     d2_i1 = document.getElementById("dica2-item1");
-<<<<<<< Updated upstream
-    let keys = alimentos.keysThatMatch(`${d2_i1.value}....`);
-=======
     let keys = alimentos.keysThatMatch(`${d2_i1.value}......`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sorvete'){
@@ -447,11 +410,7 @@ function getd2i1(){
 }
 function getd2i3(){
     d2_i3 = document.getElementById("dica2-item3");
-<<<<<<< Updated upstream
-    let keys = alimentos.keysThatMatch(`..${d2_i3.value}..`);
-=======
     let keys = alimentos.keysThatMatch(`..${d2_i3.value}....`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sorvete'){
@@ -466,11 +425,7 @@ function getd2i3(){
 }
 function getd2i4(){
     d2_i4 = document.getElementById("dica2-item4");
-<<<<<<< Updated upstream
-    let keys = alimentos.keysThatMatch(`...${d2_i4.value}.`);
-=======
     let keys = alimentos.keysThatMatch(`...${d2_i4.value}...`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sorvete'){
@@ -484,13 +439,8 @@ function getd2i4(){
     }
 }
 function getd2i5(){
-<<<<<<< Updated upstream
-    d2_i1 = document.getElementById("dica2-item1");
-    let keys = alimentos.keysThatMatch(`${d2_i5.value}....`);
-=======
     d2_i5 = document.getElementById("dica2-item5");
     let keys = alimentos.keysThatMatch(`....${d2_i5.value}..`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sorvete'){
@@ -504,13 +454,8 @@ function getd2i5(){
     }
 }
 function getd2i6(){
-<<<<<<< Updated upstream
-    d2_i1 = document.getElementById("dica2-item1");
-    let keys = alimentos.keysThatMatch(`${d2_i6.value}....`);
-=======
     d2_i6 = document.getElementById("dica2-item6");
     let keys = alimentos.keysThatMatch(`.....${d2_i6.value}.`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sorvete'){
@@ -524,13 +469,8 @@ function getd2i6(){
     }
 }
 function getd2i7(){
-<<<<<<< Updated upstream
-    d2_i1 = document.getElementById("dica2-item1");
-    let keys = alimentos.keysThatMatch(`${d2_i7_d5_i2.value}....`);
-=======
     d2_i7_d5_i2 = document.getElementById("dica2-item7-dica5-item2");
     let keys = alimentos.keysThatMatch(`......${d2_i7_d5_i2.value}`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sorvete'){
@@ -547,11 +487,7 @@ function getd2i7(){
 // Palavra3
 function getd3i1(){
     d3_i1 = document.getElementById("dica3-item1");
-<<<<<<< Updated upstream
-    let keys = alimentos.keysThatMatch(`${d3_i1.value}.....`);
-=======
     let keys = alimentos.keysThatMatch(`${d3_i1.value}....`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sushi'){
@@ -565,13 +501,8 @@ function getd3i1(){
     }
 }
 function getd3i3(){
-<<<<<<< Updated upstream
-    d3_i2 = document.getElementById("dica3-item2");
-    let keys = alimentos.keysThatMatch(`.${d3_i3.value}....`);
-=======
     d3_i3 = document.getElementById("dica3-item3");
     let keys = alimentos.keysThatMatch(`..${d3_i3.value}..`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sushi'){
@@ -585,13 +516,8 @@ function getd3i3(){
     }
 }
 function getd3i4(){
-<<<<<<< Updated upstream
-    d3_i3 = document.getElementById("dica3-item3");
-    let keys = alimentos.keysThatMatch(`..${d3_i4.value}...`);
-=======
     d3_i4 = document.getElementById("dica3-item4");
     let keys = alimentos.keysThatMatch(`...${d3_i4.value}.`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sushi'){
@@ -605,13 +531,8 @@ function getd3i4(){
     }
 }
 function getd3i5(){
-<<<<<<< Updated upstream
-    d3_i4_d7_i5 = document.getElementById("dica3-item4-dica7-item5");
-    let keys = alimentos.keysThatMatch(`...${d3_i5.value}..`);
-=======
     d3_i5 = document.getElementById("dica3-item5");
     let keys = alimentos.keysThatMatch(`....${d3_i5.value}`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'sushi'){
@@ -628,11 +549,7 @@ function getd3i5(){
 //Palavra4
 function getd4i1(){
     d4_i1 = document.getElementById("dica4-item1");
-<<<<<<< Updated upstream
-    let keys = alimentos.keysThatMatch(`${d4_i1.value}...`);
-=======
     let keys = alimentos.keysThatMatch(`${d4_i1.value}.....`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] ='banana'){
@@ -647,11 +564,7 @@ function getd4i1(){
 }
 function getd4i2(){
     d4_i2 = document.getElementById("dica4-item2");
-<<<<<<< Updated upstream
-    let keys = alimentos.keysThatMatch(`.${d4_i2.value}..`);
-=======
     let keys = alimentos.keysThatMatch(`.${d4_i2.value}....`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'banana'){
@@ -666,11 +579,7 @@ function getd4i2(){
 }
 function getd4i3(){
     d4_i3 = document.getElementById("dica4-item3");
-<<<<<<< Updated upstream
-    let keys = alimentos.keysThatMatch(`..${d4_i3.value}.`);
-=======
     let keys = alimentos.keysThatMatch(`..${d4_i3.value}...`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'banana'){
@@ -684,13 +593,8 @@ function getd4i3(){
     }
 }
 function getd4i5(){
-<<<<<<< Updated upstream
-    d4_i3 = document.getElementById("dica4-item3");
-    let keys = alimentos.keysThatMatch(`..${d4_i5.value}.`);
-=======
     d4_i5 = document.getElementById("dica4-item5");
     let keys = alimentos.keysThatMatch(`....${d4_i5.value}.`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'banana'){
@@ -704,13 +608,8 @@ function getd4i5(){
     }
 }
 function getd4i6(){
-<<<<<<< Updated upstream
-    d4_i3 = document.getElementById("dica4-item3");
-    let keys = alimentos.keysThatMatch(`..${d4_i6_d8_i2.value}.`);
-=======
     d4_i6_d8_i2 = document.getElementById("dica4-item6-dica8-item2");
     let keys = alimentos.keysThatMatch(`.....${d4_i6_d8_i2.value}`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'banana'){
@@ -740,13 +639,8 @@ function getd5i1(){
     }
 }
 function getd5i3(){
-<<<<<<< Updated upstream
-    d5_i1 = document.getElementById("dica5-item1");
-    let keys = alimentos.keysThatMatch(`${d5_i3.value}.....`);
-=======
     d5_i3 = document.getElementById("dica5-item3");
     let keys = alimentos.keysThatMatch(`..${d5_i3.value}...`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'feijao'){
@@ -790,13 +684,8 @@ function getd5i5(){
     }
 }
 function getd5i6(){
-<<<<<<< Updated upstream
-    d5_i1 = document.getElementById("dica5-item1");
-    let keys = alimentos.keysThatMatch(`${d5_i6_d6_i1.value}.....`);
-=======
     d5_i6_d6_i1 = document.getElementById("dica5-item6-dica6-item1");
     let keys = alimentos.keysThatMatch(`.....${d5_i6_d6_i1.value}`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'feijao'){
@@ -812,13 +701,8 @@ function getd5i6(){
 
 // Palavra6
 function getd6i2(){
-<<<<<<< Updated upstream
-    d6_i1 = document.getElementById("dica6-item1");
-    let keys = alimentos.keysThatMatch(`${d6_i2.value}....`);
-=======
     d6_i2 = document.getElementById("dica6-item2");
     let keys = alimentos.keysThatMatch(`.${d6_i2.value}.`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'ovo'){
@@ -832,13 +716,8 @@ function getd6i2(){
     }
 }
 function getd6i3(){
-<<<<<<< Updated upstream
-    d6_i2_d5_i6 = document.getElementById("dica6-item2-dica5-item6");
-    let keys = alimentos.keysThatMatch(`.${d6_i3_d7_i6.value}...`);
-=======
     d6_i3_d7_i6 = document.getElementById("dica6-item3-dica7-item6");
     let keys = alimentos.keysThatMatch(`..${d6_i3_d7_i6.value}`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'ovo'){
@@ -853,13 +732,8 @@ function getd6i3(){
 }
 // Palavra7
 function getd7i1(){
-<<<<<<< Updated upstream
-    d7_i2 = document.getElementById("dica7-item2");
-    let keys = alimentos.keysThatMatch(`.${d7_i1.value}......`);
-=======
     d7_i1 = document.getElementById("dica7-item1");
     let keys = alimentos.keysThatMatch(`${d7_i1.value}.....`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'queijo'){
@@ -874,11 +748,7 @@ function getd7i1(){
 }
 function getd7i2(){
     d7_i2 = document.getElementById("dica7-item2");
-<<<<<<< Updated upstream
-    let keys = alimentos.keysThatMatch(`.${d7_i2.value}......`);
-=======
     let keys = alimentos.keysThatMatch(`.${d7_i2.value}....`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'queijo'){
@@ -893,11 +763,7 @@ function getd7i2(){
 }
 function getd7i3(){
     d7_i3 = document.getElementById("dica7-item3");
-<<<<<<< Updated upstream
-    let keys = alimentos.keysThatMatch(`..${d7_i3.value}.....`);
-=======
     let keys = alimentos.keysThatMatch(`..${d7_i3.value}...`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'queijo'){
@@ -912,11 +778,7 @@ function getd7i3(){
 }
 function getd7i4(){
     d7_i4 = document.getElementById("dica7-item4");
-<<<<<<< Updated upstream
-    let keys = alimentos.keysThatMatch(`...${d7_i4.value}....`);
-=======
     let keys = alimentos.keysThatMatch(`...${d7_i4.value}..`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'queijo'){
@@ -930,13 +792,8 @@ function getd7i4(){
     }
 }
 function getd7i5(){
-<<<<<<< Updated upstream
-    d7_i6 = document.getElementById("dica7-item6");
-    let keys = alimentos.keysThatMatch(`.....${d7_i5.value}..`);
-=======
     d7_i5 = document.getElementById("dica7-item5");
     let keys = alimentos.keysThatMatch(`....${d7_i5.value}.`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'queijo'){
@@ -952,13 +809,8 @@ function getd7i5(){
 
 //Palavra8
 function getd8i1(){
-<<<<<<< Updated upstream
-    d8_i1_d5_i3 = document.getElementById("dica8-item1-dica5-item3");
-    let keys = alimentos.keysThatMatch(`${d8_i1.value}.....`);
-=======
     d8_i1 = document.getElementById("dica8-item1");
     let keys = alimentos.keysThatMatch(`${d8_i1.value}...`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'maca'){
@@ -972,13 +824,8 @@ function getd8i1(){
     }
 }
 function getd8i3(){
-<<<<<<< Updated upstream
-    d8_i2 = document.getElementById("dica8-item2");
-    let keys = alimentos.keysThatMatch(`.${d8_i3.value}....`);
-=======
     d8_i3 = document.getElementById("dica8-item3");
     let keys = alimentos.keysThatMatch(`..${d8_i3.value}.`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'maca'){
@@ -992,13 +839,8 @@ function getd8i3(){
     }
 }
 function getd8i4(){
-<<<<<<< Updated upstream
-    d8_i2 = document.getElementById("dica8-item2");
-    let keys = alimentos.keysThatMatch(`.${d8_i4.value}....`);
-=======
     d8_i4 = document.getElementById("dica8-item4");
     let keys = alimentos.keysThatMatch(`...${d8_i4.value}`);
->>>>>>> Stashed changes
     let pertence = false
     for (let i = 0; i<keys.length; i++ ){
         if (keys[i] == 'maca'){
