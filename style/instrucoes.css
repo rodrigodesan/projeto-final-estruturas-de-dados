@@ -1,41 +1,110 @@
 @charset "UTF-8";
 
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
 body {
-    background-color: aquamarine;
-    text-align: center;
+    background-color: #ebe5c5;
 }
 
-h1 {
+
+
+header {
+    background-color: #819ecc;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 150px;
+    padding-top: 40px;
 }
 
-div#tutorial{
-    background-color: white;
+header > h1 {
+    color: white;
+    font-weight: normal;
+    margin-bottom: 0px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+
 }
 
-.tutorial > img{
-    text-align: center;
-}
 
 main {
-    width: 100%;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1000px;
     margin: auto;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
 }
 
-h2 > p {
+main img{
+    width: 100%;
+}
+
+
+main h1 {
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2 {
+    font-weight: normal;
+    font-size: 1.2em;
+    text-indent: 8px;
+}
+
+main p {
     text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+    padding: 15px 0px;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
 }
 
-main > p {
-    text-align: justify;
-}
-p {
-    text-align: center;
+main strong {
+    font-weight: bolder;
 }
 
-div.linkHome {
+
+p > #logo{
+    width: 20%;
+    padding: 0px;
+}
+
+#certo{
+    color: green;
+    font-weight: bolder
+}
+
+#errada {
+    color: red;
+    font-weight: bolder;
+}
+
+article > h2 {
+    color: red;
+}
+
+#screen {
+    width: 100%;
     text-align: center;
+    margin: 0px auto;
+}
+
+
+
+
+a {
+    display: flex;
+    justify-content: center;
+}
+
+a > img {
+    width: 70px;
 }
