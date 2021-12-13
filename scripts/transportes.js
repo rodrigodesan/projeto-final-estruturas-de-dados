@@ -849,7 +849,6 @@ function resultado() {
      d6_i5_d3_i8 = document.getElementById("dica6-item5-dica3-item8");
 
      palavra1 = d1_i1_d3_i1.value + d1_i2.value + d1_i3.value + d1_i4.value + d1_i5.value;
-     console.log(palavra1)
 
      palavra2 = d2_i1.value + d2_i2.value + d2_i3.value + d4_i1_d2_i4.value + d2_i5.value + d2_i6.value;
     

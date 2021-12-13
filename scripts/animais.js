@@ -202,7 +202,7 @@ animais.put("Cobra",6);
 animais.put("Elefante",7);
 animais.put("Macaco",8);
 
-let dicas = ["O Rei da Selva","Cavalo listrado","Pescoço grande","Dorme no inverno e vive em cavernas", "Serve de montaria no deserto","Rasteja","Tem uma tromba","Sobe em árvores"]
+let dicas = ["O Rei da Selva","Suas cores são preto e branco","Seu pescoço é longo","Gosta de dormir e comer mel", "Serve de montaria no deserto","Rasteja pelo chão","Tem uma tromba longa","Sobe em árvores"]
 let dicasExibir = new ArrayQueue();
 for (let i of dicas){
     dicasExibir.add(i);
@@ -874,7 +874,6 @@ function resultado(){
     d6_i4 = document.getElementById("dica6-item4");
     d6_i5 = document.getElementById("dica6-item5");
     palavra1 = d1_i1.value + d1_i2_d7_i1.value + d1_i3.value + d1_i4.value;
-    console.log(palavra1)
     palavra2 = d2_i1.value + d2_i2.value + d2_i3.value + d2_i4.value + d8_i4_d2_i5.value;
     palavra3 = d3_i1.value + d3_i2.value + d3_i3.value + d3_i4_d7_i5.value + d3_i5.value + d3_i6_d5_i2.value;
     palavra4 = d4_i1.value + d4_i2.value + d4_i3.value + d8_i6_d4_i4.value;
@@ -882,10 +881,14 @@ function resultado(){
     palavra6 = d6_i1.value + d6_i2_d5_i6.value + d6_i3.value + d6_i4.value + d6_i5.value;
     palavra7 = d1_i2_d7_i1.value + d7_i2.value + d7_i3.value + d7_i4.value + d3_i4_d7_i5.value + d7_i6.value + d7_i7.value + d7_i8.value;
     palavra8 = d8_i1_d5_i3.value + d8_i2.value + d8_i3.value + d8_i4_d2_i5.value + d8_i5.value + d8_i6_d4_i4.value;
+
+    let correto = true;
+
     // Checagem palavra1
     let dica1 = document.getElementsByClassName("dica1");
     let p1 = "LEÃO";
     if (animais.get(palavra1) != 1){
+        correto = false;
         for (let i = 0; i<dica1.length; i++){
             dica1[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -897,6 +900,7 @@ function resultado(){
     let dica2 = document.getElementsByClassName("dica2");
     let p2 = "ZEBRA";
     if (animais.get(palavra2) != 2){
+        correto = false;
         for (let i = 0; i<dica2.length; i++){
             dica2[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -908,6 +912,7 @@ function resultado(){
     let dica3 = document.getElementsByClassName("dica3");
     let p3 = "GIRAFA";
     if (animais.get(palavra3) != 3){
+        correto = false;
         for (let i = 0; i<dica3.length; i++){
             dica3[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -919,6 +924,7 @@ function resultado(){
     let dica4 = document.getElementsByClassName("dica4");
     let p4 = "URSO";
     if (animais.get(palavra4) != 4){
+        correto = false;
         for (let i = 0; i<dica4.length; i++){
             dica4[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -930,6 +936,7 @@ function resultado(){
     let dica5 = document.getElementsByClassName("dica5");
     let p5 = "CAMELO";
     if (animais.get(palavra5) != 5){
+        correto = false;
         for (let i = 0; i<dica5.length; i++){
             dica5[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -942,6 +949,7 @@ function resultado(){
     let dica6 = document.getElementsByClassName("dica6");
     let p6 = "COBRA";
     if (animais.get(palavra6) != 6){
+        correto = false;
         for (let i = 0; i<dica6.length; i++){
             dica6[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -954,6 +962,7 @@ function resultado(){
     let dica7 = document.getElementsByClassName("dica7");
     let p7 = "ELEFANTE";
     if (animais.get(palavra7) != 7){
+        correto = false;
         for (let i = 0; i<dica7.length; i++){
             dica7[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
@@ -962,16 +971,29 @@ function resultado(){
         dica7[i].value = p7[i];
     }
 
-    // Checagem palavra7
+    // Checagem palavra8
     let dica8 = document.getElementsByClassName("dica8");
     let p8 = "MACACO";
     if (animais.get(palavra8) != 8){
+        correto = false;
         for (let i = 0; i<dica8.length; i++){
             dica8[i].style.backgroundColor = "rgba(255, 158, 158, 0.746)";
         }
     }
     for (let i=0;i<p8.length;i++){
         dica8[i].value = p8[i];
+    }
+
+    // Mensagem de resultado
+    let res = document.getElementById("resultado");
+    res.style.marginTop = "10px";
+    res.style.marginBottom = "20px";
+    if (correto){
+        res.style.color = "rgba(190, 255, 190, 0.801)";
+        res.innerText = "PARABÉNS, VOCÊ ACERTOU TUDO! Aperte o botão abaixo para jogar novamente."
+    } else{
+        res.style.color = "rgba(255, 158, 158, 0.746)";
+        res.innerText = "Não foi dessa vez! Aperte o botão abaixo para jogar novamente."
     }
 }
 
