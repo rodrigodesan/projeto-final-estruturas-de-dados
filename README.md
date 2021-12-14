@@ -90,6 +90,14 @@ Eles podem ser encontradas nesses links!
 <p align="center">
   <img src="https://github.com/rodrigodesan/projeto-final-estruturas-de-dados/blob/main/images/tela-3.png" alt="Screenshot jogo" />
 </p>
+<br>
+
+# O jogo também funciona no seu celular :iphone:
+<br>
+
+<p align="left">
+  <img src="https://github.com/rodrigodesan/projeto-final-estruturas-de-dados/blob/main/images/screenshot.jpeg" alt="Screenshot jogo" />
+</p>
 
 ---
 
